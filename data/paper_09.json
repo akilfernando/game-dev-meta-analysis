@@ -1,0 +1,33 @@
+{
+  "id": "paper_09",
+  "title": "Empirical Assessment of Shader Compilation Overhead in Automated Game Builds",
+  "authors": [
+    "Klaus Weber",
+    "Elena Gomez",
+    "Dimitri Ivanov"
+  ],
+  "year": 2020,
+  "venue": "EMSE",
+  "dataset_size": "60,000 CI runs containing DirectX 12 and Vulkan shader variants",
+  "primary_methodology": "Profile Telemetry Analysis and Compiler Tracing",
+  "quantitative_timeout_findings": {
+    "ci_timeout_rate_percent": 21.3,
+    "avg_build_duration_minutes": 92.1,
+    "asset_pipeline_overhead_percent": 68.5,
+    "flaky_build_rate_percent": 12.0
+  },
+  "crash_triage_taxonomy": {
+    "primary_categories": [
+      "SPIR-V Optimization Timeout",
+      "HLSL/GLSL Cross-Compilation Crash",
+      "Shader Permutation Explosion",
+      "Driver Pipeline State Object (PSO) Failure"
+    ],
+    "automated_triage_accuracy_percent": 83.0,
+    "key_bottlenecks": [
+      "Combinatorial Shader Variant Permutations",
+      "Lack of Parallel Shader Micro-Compilers",
+      "Monolithic Driver PSO Caching Constraints"
+    ]
+  }
+}

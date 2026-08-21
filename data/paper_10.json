@@ -1,0 +1,32 @@
+{
+  "id": "paper_10",
+  "title": "Impact of Flaky Infrastructure on Game Developer Productivity: An Industry Survey",
+  "authors": [
+    "Jessica Taylor",
+    "Rahul Sharma"
+  ],
+  "year": 2024,
+  "venue": "IEEE Software",
+  "dataset_size": "240 game developers surveyed across 14 AAA and AA studios",
+  "primary_methodology": "Mixed-Methods Industry Survey and Qualitative Fieldwork",
+  "quantitative_timeout_findings": {
+    "ci_timeout_rate_percent": 28.0,
+    "avg_build_duration_minutes": 105.0,
+    "asset_pipeline_overhead_percent": 58.0,
+    "flaky_build_rate_percent": 32.1
+  },
+  "crash_triage_taxonomy": {
+    "primary_categories": [
+      "Hardware Runner Exhaustion",
+      "Unstable License Server Connection",
+      "Intermittent Network Storage Disconnection",
+      "Test Environment Pollution"
+    ],
+    "automated_triage_accuracy_percent": 68.4,
+    "key_bottlenecks": [
+      "High Manual Triage Overhead for Flaky Build Failures",
+      "Lack of Deterministic Replayability for Hardware Crashes",
+      "Context Switching Costs for Developers"
+    ]
+  }
+}

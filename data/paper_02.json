@@ -1,0 +1,33 @@
+{
+  "id": "paper_02",
+  "title": "Categorizing and Triaging Automated Crash Dumps in AAA Game Software",
+  "authors": [
+    "David K. Thorne",
+    "Aisha Al-Mansoor",
+    "Chen Wei"
+  ],
+  "year": 2022,
+  "venue": "MSR",
+  "dataset_size": "450,000 mini-dump stack traces from PC and Console releases",
+  "primary_methodology": "Machine Learning Trace Clustering and Field Crash Analysis",
+  "quantitative_timeout_findings": {
+    "ci_timeout_rate_percent": 12.1,
+    "avg_build_duration_minutes": 62.0,
+    "asset_pipeline_overhead_percent": 48.5,
+    "flaky_build_rate_percent": 11.0
+  },
+  "crash_triage_taxonomy": {
+    "primary_categories": [
+      "Null Pointer Dereference in Entity-Component System",
+      "Render Thread Deadlock",
+      "GPU Out-of-Memory (OOM)",
+      "Asset Bundle Serialization Mismatch"
+    ],
+    "automated_triage_accuracy_percent": 88.4,
+    "key_bottlenecks": [
+      "Truncated Stack Traces in Minidumps",
+      "Inconsistent Symbol Server Synchronization",
+      "Asynchronous Job System Deadlocks"
+    ]
+  }
+}

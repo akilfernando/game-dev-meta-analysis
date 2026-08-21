@@ -1,0 +1,32 @@
+{
+  "id": "paper_08",
+  "title": "Evaluating Distributed Caching Strategies for Game Asset Compilation in CI Pipelines",
+  "authors": [
+    "Amara Okafor",
+    "Carlos Mendez"
+  ],
+  "year": 2023,
+  "venue": "ESEC/FSE",
+  "dataset_size": "50,000 pipeline builds across distributed CI agent farms",
+  "primary_methodology": "Benchmarking and Distributed Cache Trace Simulation",
+  "quantitative_timeout_findings": {
+    "ci_timeout_rate_percent": 8.7,
+    "avg_build_duration_minutes": 38.2,
+    "asset_pipeline_overhead_percent": 41.2,
+    "flaky_build_rate_percent": 6.4
+  },
+  "crash_triage_taxonomy": {
+    "primary_categories": [
+      "Cache Key Collision",
+      "Shared Memory Serialization Fault",
+      "Corrupted Intermediate Cache Artifact",
+      "Cache Eviction Thrashing"
+    ],
+    "automated_triage_accuracy_percent": 85.7,
+    "key_bottlenecks": [
+      "Network Bandwidth Saturation during Heavy Asset Fetching",
+      "Stale Asset Cache Invalidation",
+      "Distributed File Lock Contention"
+    ]
+  }
+}

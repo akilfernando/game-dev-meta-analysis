@@ -1,0 +1,33 @@
+{
+  "id": "paper_06",
+  "title": "Automated Root-Cause Triage of Build Failures in Cross-Platform Game Engines",
+  "authors": [
+    "Samantha Reed",
+    "Vikram Patel",
+    "Mateo Silva"
+  ],
+  "year": 2022,
+  "venue": "ICSE",
+  "dataset_size": "95,000 CI build logs from open-source and commercial engines (Godot, Unreal, Custom)",
+  "primary_methodology": "NLP Log Pattern Extraction and Classification",
+  "quantitative_timeout_findings": {
+    "ci_timeout_rate_percent": 16.8,
+    "avg_build_duration_minutes": 68.5,
+    "asset_pipeline_overhead_percent": 51.0,
+    "flaky_build_rate_percent": 13.5
+  },
+  "crash_triage_taxonomy": {
+    "primary_categories": [
+      "Header Dependency Explosion",
+      "Link-Time Optimization (LTO) OOM",
+      "Missing Target Platform Library",
+      "Macro Definition Conflicts"
+    ],
+    "automated_triage_accuracy_percent": 89.2,
+    "key_bottlenecks": [
+      "Verbose C++ Compiler Output Noise",
+      "Cascading Template Instantiation Errors",
+      "Incomplete CI Log Capture on Runner Crash"
+    ]
+  }
+}

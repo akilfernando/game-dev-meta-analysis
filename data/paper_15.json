@@ -1,0 +1,33 @@
+{
+  "id": "paper_15",
+  "title": "Empirical Evaluation of Test Selection and Prioritization in Game Engine CI",
+  "authors": [
+    "Benjamin Wright",
+    "Li Wei",
+    "Kofi Mensah"
+  ],
+  "year": 2023,
+  "venue": "ICSE",
+  "dataset_size": "110,000 commit builds across 5 game engine repositories",
+  "primary_methodology": "Machine Learning Test Prioritization Simulation",
+  "quantitative_timeout_findings": {
+    "ci_timeout_rate_percent": 14.6,
+    "avg_build_duration_minutes": 53.2,
+    "asset_pipeline_overhead_percent": 46.8,
+    "flaky_build_rate_percent": 10.9
+  },
+  "crash_triage_taxonomy": {
+    "primary_categories": [
+      "Unselected Dependency Fault",
+      "Regression in Untested Asset Dependency",
+      "Flaky Test Timeout",
+      "Stale Test Baseline Fault"
+    ],
+    "automated_triage_accuracy_percent": 82.4,
+    "key_bottlenecks": [
+      "Complex Code-to-Asset Dependency Graphs",
+      "High Cost of False Negatives in Selective Testing",
+      "Dynamic Code Execution Paths in Scriptable Game Logic"
+    ]
+  }
+}

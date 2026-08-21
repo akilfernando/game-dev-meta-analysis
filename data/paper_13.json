@@ -1,0 +1,32 @@
+{
+  "id": "paper_13",
+  "title": "Automated Detection of Memory Leaks and Deadlocks in Game CI Smoke Testing",
+  "authors": [
+    "Igor Smirnov",
+    "Nadia Petrov"
+  ],
+  "year": 2022,
+  "venue": "EMSE",
+  "dataset_size": "28,000 automated smoke test execution runs",
+  "primary_methodology": "Dynamic Sanitizer Instrumentation and Log Analysis",
+  "quantitative_timeout_findings": {
+    "ci_timeout_rate_percent": 23.4,
+    "avg_build_duration_minutes": 95.0,
+    "asset_pipeline_overhead_percent": 38.0,
+    "flaky_build_rate_percent": 21.0
+  },
+  "crash_triage_taxonomy": {
+    "primary_categories": [
+      "Thread Pool Task Deadlock",
+      "Unsanitized C++ Array Out-Of-Bounds",
+      "Renderer Frame Sync Memory Leak",
+      "Asynchronous IO Queue Hang"
+    ],
+    "automated_triage_accuracy_percent": 86.3,
+    "key_bottlenecks": [
+      "Runtime Overhead of Memory/Address Sanitizers in CI",
+      "Non-Deterministic Timing in Dynamic Analysis",
+      "High Resource Demands of Headless Smoke Testing"
+    ]
+  }
+}

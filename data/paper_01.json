@@ -1,0 +1,33 @@
+{
+  "id": "paper_01",
+  "title": "An Empirical Study of Continuous Integration Timeouts in Large-Scale Game Engine Pipelines",
+  "authors": [
+    "Elena Rostova",
+    "Marcus Vance",
+    "Siddharth Nair"
+  ],
+  "year": 2021,
+  "venue": "ICSE",
+  "dataset_size": "120,000 CI builds across 4 commercial C++ game engines",
+  "primary_methodology": "Repository Mining and Quantitative Log Analysis",
+  "quantitative_timeout_findings": {
+    "ci_timeout_rate_percent": 18.4,
+    "avg_build_duration_minutes": 84.5,
+    "asset_pipeline_overhead_percent": 62.0,
+    "flaky_build_rate_percent": 14.2
+  },
+  "crash_triage_taxonomy": {
+    "primary_categories": [
+      "Asset Cooking Failure",
+      "Shader Compilation Timeout",
+      "Native Memory Corruption",
+      "DirectX/Vulkan Driver Deadlock"
+    ],
+    "automated_triage_accuracy_percent": 81.5,
+    "key_bottlenecks": [
+      "Monolithic Shader Graph Compilation",
+      "Uncached 3D Mesh Baking",
+      "Multi-Platform Cross-Compilation Locking"
+    ]
+  }
+}

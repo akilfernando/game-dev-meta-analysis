@@ -1,0 +1,32 @@
+{
+  "id": "paper_14",
+  "title": "Triage Automation for Hardware-Accelerated Graphics Pipelines in Continuous Integration",
+  "authors": [
+    "Claire Dubois",
+    "Erik Lindemann"
+  ],
+  "year": 2024,
+  "venue": "ESEC/FSE",
+  "dataset_size": "55,000 GPU-accelerated CI test suite runs",
+  "primary_methodology": "GPU Telemetry Mining and Computer Vision Artifact Triage",
+  "quantitative_timeout_findings": {
+    "ci_timeout_rate_percent": 17.9,
+    "avg_build_duration_minutes": 66.8,
+    "asset_pipeline_overhead_percent": 59.1,
+    "flaky_build_rate_percent": 16.4
+  },
+  "crash_triage_taxonomy": {
+    "primary_categories": [
+      "GPU Driver TDR (Timeout Detection & Recovery)",
+      "Raytracing Acceleration Structure Crash",
+      "Visual Artifact Rendering Regression",
+      "VRAM Fragmentation Fault"
+    ],
+    "automated_triage_accuracy_percent": 87.9,
+    "key_bottlenecks": [
+      "Flakiness from Physical GPU Hardware Differences",
+      "Driver Version Drift on CI Nodes",
+      "Lack of Virtualized GPU Instance Scalability"
+    ]
+  }
+}

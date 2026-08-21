@@ -1,0 +1,33 @@
+{
+  "id": "paper_11",
+  "title": "Deep Learning for Automated Minidump Categorization in Live Service Games",
+  "authors": [
+    "Han Wu",
+    "Jonathan Miller",
+    "Fatima Al-Hassan"
+  ],
+  "year": 2023,
+  "venue": "ICSE",
+  "dataset_size": "800,000 crash minidumps from 3 live-service titles",
+  "primary_methodology": "Deep Neural Network Classifier Evaluation",
+  "quantitative_timeout_findings": {
+    "ci_timeout_rate_percent": 11.2,
+    "avg_build_duration_minutes": 50.4,
+    "asset_pipeline_overhead_percent": 44.0,
+    "flaky_build_rate_percent": 7.9
+  },
+  "crash_triage_taxonomy": {
+    "primary_categories": [
+      "Network Socket Timeout Crash",
+      "Anti-Cheat Module Conflict",
+      "Dynamic Asset Unloading Use-After-Free",
+      "Third-Party Middleware Exception"
+    ],
+    "automated_triage_accuracy_percent": 93.6,
+    "key_bottlenecks": [
+      "Obfuscated Third-Party Library Call Stacks",
+      "Label Noise in Manual Crash Triage Training Data",
+      "Rapid Drift of Stack Traces Across Game Updates"
+    ]
+  }
+}

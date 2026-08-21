@@ -1,0 +1,32 @@
+{
+  "id": "paper_07",
+  "title": "Characterizing Game Engine Crash Minidumps at Scale",
+  "authors": [
+    "Oliver Bennet",
+    "Yuki Sato"
+  ],
+  "year": 2021,
+  "venue": "MSR",
+  "dataset_size": "1.2 million automated crash dumps from beta game releases",
+  "primary_methodology": "Call-Graph Clustering and Telemetry Aggregation",
+  "quantitative_timeout_findings": {
+    "ci_timeout_rate_percent": 10.5,
+    "avg_build_duration_minutes": 45.0,
+    "asset_pipeline_overhead_percent": 30.0,
+    "flaky_build_rate_percent": 8.2
+  },
+  "crash_triage_taxonomy": {
+    "primary_categories": [
+      "Access Violation in Render Graph Pass",
+      "Garbage Collection Sweep Deadlock",
+      "Audio Buffer Underrun Fatal",
+      "Physics Raycast Memory Leak"
+    ],
+    "automated_triage_accuracy_percent": 91.0,
+    "key_bottlenecks": [
+      "Missing PDB/Symbol Files for Production Builds",
+      "Stack Corruptions Overwriting Return Addresses",
+      "Incomplete GPU Memory Heap Snapshots"
+    ]
+  }
+}

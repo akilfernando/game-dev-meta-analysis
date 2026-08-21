@@ -1,0 +1,33 @@
+{
+  "id": "paper_04",
+  "title": "Mitigating Asset Pipeline Bottlenecks in Game Engine CI/CD Workflows",
+  "authors": [
+    "Rachel Adams",
+    "Guillaume Tremblay",
+    "Jian Zhang"
+  ],
+  "year": 2023,
+  "venue": "EMSE",
+  "dataset_size": "18 game projects using Unreal Engine and Unity asset pipelines",
+  "primary_methodology": "Controlled Industrial Experimentation and Telemetry Mining",
+  "quantitative_timeout_findings": {
+    "ci_timeout_rate_percent": 15.3,
+    "avg_build_duration_minutes": 72.3,
+    "asset_pipeline_overhead_percent": 71.4,
+    "flaky_build_rate_percent": 9.8
+  },
+  "crash_triage_taxonomy": {
+    "primary_categories": [
+      "Texture Compression Out-of-Memory",
+      "Audio Bank Serialization Error",
+      "Lighting Data Bake Timeout",
+      "Invalid Reference Graph Cycle"
+    ],
+    "automated_triage_accuracy_percent": 84.1,
+    "key_bottlenecks": [
+      "Non-Incremental Asset Cooking",
+      "Disk I/O Saturation during Asset Ingestion",
+      "High Artifact Storage Footprint"
+    ]
+  }
+}

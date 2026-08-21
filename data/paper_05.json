@@ -1,0 +1,32 @@
+{
+  "id": "paper_05",
+  "title": "Flaky Tests and Timeout Diagnostics in Game Engine Integration Testing",
+  "authors": [
+    "Lucas Kowalski",
+    "Beatrice Dupont"
+  ],
+  "year": 2019,
+  "venue": "IEEE Software",
+  "dataset_size": "35,000 automated integration and physics test runs",
+  "primary_methodology": "Qualitative Triage Interviews and Log Telemetry Analysis",
+  "quantitative_timeout_findings": {
+    "ci_timeout_rate_percent": 25.1,
+    "avg_build_duration_minutes": 58.0,
+    "asset_pipeline_overhead_percent": 35.0,
+    "flaky_build_rate_percent": 29.4
+  },
+  "crash_triage_taxonomy": {
+    "primary_categories": [
+      "Physics Non-Determinism Timeout",
+      "Networking State Desynchronization",
+      "Animation Rig Blending Fault",
+      "UI Thread Blocking"
+    ],
+    "automated_triage_accuracy_percent": 72.8,
+    "key_bottlenecks": [
+      "Floating-Point Variance Across Hardware",
+      "Headless Render Context Initialization Timeout",
+      "Race Conditions in Multithreaded ECS"
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "paper_03",
+  "title": "Multi-Platform Build Matrix Friction in Modern Game Engine Development",
+  "authors": [
+    "Henrik Lindqvist",
+    "Sofia Rossi",
+    "Taro Tanaka"
+  ],
+  "year": 2020,
+  "venue": "ESEC/FSE",
+  "dataset_size": "85,000 multi-platform build runs targeting Windows, PS5, Xbox Series X, and Switch",
+  "primary_methodology": "Empirical Pipeline Analysis and Developer Surveys",
+  "quantitative_timeout_findings": {
+    "ci_timeout_rate_percent": 22.5,
+    "avg_build_duration_minutes": 110.0,
+    "asset_pipeline_overhead_percent": 55.0,
+    "flaky_build_rate_percent": 18.6
+  },
+  "crash_triage_taxonomy": {
+    "primary_categories": [
+      "SDK Toolchain Incompatibility",
+      "Platform-Specific Graphics Driver Crash",
+      "Console Memory Allocation Exceeded",
+      "Cross-Compiler ABI Mismatch"
+    ],
+    "automated_triage_accuracy_percent": 76.2,
+    "key_bottlenecks": [
+      "Platform SDK Toolchain Heterogeneity",
+      "Target Hardware Device Farm Bottlenecks",
+      "Proprietary Console SDK Licensing Constraints in Runner Containers"
+    ]
+  }
+}

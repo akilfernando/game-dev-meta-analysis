@@ -1,0 +1,32 @@
+{
+  "id": "paper_12",
+  "title": "Analyzing Matrix Build Dependencies in Modern Game Engine Releases",
+  "authors": [
+    "Antoine Martin",
+    "Sven Hansen"
+  ],
+  "year": 2021,
+  "venue": "MSR",
+  "dataset_size": "40,000 multi-configuration matrix build runs",
+  "primary_methodology": "Dependency Graph Mining and Build Schedule Simulation",
+  "quantitative_timeout_findings": {
+    "ci_timeout_rate_percent": 19.7,
+    "avg_build_duration_minutes": 78.6,
+    "asset_pipeline_overhead_percent": 52.3,
+    "flaky_build_rate_percent": 15.8
+  },
+  "crash_triage_taxonomy": {
+    "primary_categories": [
+      "Matrix Parameter Misconfiguration",
+      "Target Platform Toolchain Version Skew",
+      "Cross-Target Artifact Spillover",
+      "Conditional Macro Branching Error"
+    ],
+    "automated_triage_accuracy_percent": 79.8,
+    "key_bottlenecks": [
+      "Redundant Recompilation in Broad Build Matrices",
+      "Inadequate Parallel Runner Granularity",
+      "Resource Starvation on Specialized Console Mac/PC Runners"
+    ]
+  }
+}
