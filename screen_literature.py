@@ -384,4 +384,9 @@ def run_screening_pipeline():
 
 
 if __name__ == "__main__":
+    print("=" * 80)
+    print(" [WARNING: SYNTHETIC PIPELINE DEMONSTRATION]")
+    print(" All data processed by this script is hallucinated/placeholder data.")
+    print("=" * 80)
+
     run_screening_pipeline()
