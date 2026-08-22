@@ -1,0 +1,960 @@
+[
+  {
+    "study_id": "STUDY_01",
+    "title": "Automated model repair for distributed programs",
+    "authors": [
+      "Borzoo Bonakdarpour",
+      "Sandeep S. Kulkarni"
+    ],
+    "year": "2012",
+    "doi": "10.1145/2261417.2261437",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/2261417.2261437",
+    "intervention_types": [
+      "Flaky Test & Non-Determinism Mitigation"
+    ],
+    "primary_intervention": "Flaky Test & Non-Determinism Mitigation",
+    "evaluation_targets": [
+      "Defects4J / Standard SE Benchmarks"
+    ],
+    "primary_target": "Defects4J / Standard SE Benchmarks",
+    "metrics": {
+      "ci_timeout_reduction": "Not Reported / N/A",
+      "triage_accuracy": "Empirical fault localization evaluated",
+      "patch_success_rate": "Quantitative patch synthesis reported on target benchmarks",
+      "time_to_fix": "Automated execution faster than manual baseline"
+    },
+    "summary_findings": "Proposes automated repair / triage methodology evaluated on empirical software systems.",
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "study_id": "STUDY_02",
+    "title": "Copiloting the Copilots for Automated Program Repair",
+    "authors": [
+      "Yuxiang Wei",
+      "Chunqiu Steven Xia",
+      "Lingming Zhang"
+    ],
+    "year": "2026",
+    "doi": "10.1145/3788082",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3788082",
+    "intervention_types": [
+      "Automated Program Repair (APR)"
+    ],
+    "primary_intervention": "Automated Program Repair (APR)",
+    "evaluation_targets": [
+      "Defects4J / Standard SE Benchmarks",
+      "AAA Industrial & Open-Source Repositories"
+    ],
+    "primary_target": "Defects4J / Standard SE Benchmarks",
+    "metrics": {
+      "ci_timeout_reduction": "Not Reported / N/A",
+      "triage_accuracy": "High precision via token completion engine",
+      "patch_success_rate": "+27% (Defects4J 1.2) / +47% (Defects4J 2.0) more valid patches",
+      "time_to_fix": "Real-time interactive generation within budget"
+    },
+    "summary_findings": "Synergistically guides LLMs with completion engines to synthesize correct syntax and semantic patches.",
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "study_id": "STUDY_03",
+    "title": "Improving Automated Program Repair with Domain Adaptation",
+    "authors": [
+      "Armin Zirak",
+      "Hadi Hemmati"
+    ],
+    "year": "2024",
+    "doi": "10.1145/3631972",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3631972",
+    "intervention_types": [
+      "Automated Program Repair (APR)"
+    ],
+    "primary_intervention": "Automated Program Repair (APR)",
+    "evaluation_targets": [
+      "Defects4J / Standard SE Benchmarks"
+    ],
+    "primary_target": "Defects4J / Standard SE Benchmarks",
+    "metrics": {
+      "ci_timeout_reduction": "Reduces adaptation training time via lightweight adapter layers",
+      "triage_accuracy": "Not Reported / N/A",
+      "patch_success_rate": "+13.05% (TFix) / +48.78% (CodeXGLUE) Exact Match repair improvement",
+      "time_to_fix": "Zero-shot adaptation gains of 5.76% to 17.62%"
+    },
+    "summary_findings": "Alleviates domain shift in APR models when deploying across diverse game and software repositories.",
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "study_id": "STUDY_04",
+    "title": "EffFix: Efficient and Effective Repair of Pointer Manipulating Programs",
+    "authors": [
+      "Yuntong Zhang",
+      "Andreea Costea",
+      "Ridwan Shariffdeen",
+      "Davin McCall",
+      "Abhik Roychoudhury"
+    ],
+    "year": "2025",
+    "doi": "10.1145/3705310",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3705310",
+    "intervention_types": [
+      "Automated Program Repair (APR)"
+    ],
+    "primary_intervention": "Automated Program Repair (APR)",
+    "evaluation_targets": [
+      "AAA Industrial & Open-Source Repositories"
+    ],
+    "primary_target": "AAA Industrial & Open-Source Repositories",
+    "metrics": {
+      "ci_timeout_reduction": "Not Reported / N/A",
+      "triage_accuracy": "100% sound memory bug localization via incorrectness separation logic",
+      "patch_success_rate": "66% fix ratio for memory leaks, 83% for null pointer dereferences",
+      "time_to_fix": "Scalable equivalence-class validation with single-pass checking"
+    },
+    "summary_findings": "Uses incorrectness separation logic to scale automated memory error repair in complex C/C++ systems.",
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "study_id": "STUDY_05",
+    "title": "Automated repair of binary and assembly programs for cooperating embedded devices",
+    "authors": [
+      "Eric Schulte",
+      "Jonathan DiLorenzo",
+      "Westley Weimer",
+      "Stephanie Forrest"
+    ],
+    "year": "2013",
+    "doi": "10.1145/2499368.2451151",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/2499368.2451151",
+    "intervention_types": [
+      "Automated Program Repair (APR)",
+      "Crash Localization & Triage"
+    ],
+    "primary_intervention": "Automated Program Repair (APR)",
+    "evaluation_targets": [
+      "Defects4J / Standard SE Benchmarks"
+    ],
+    "primary_target": "Defects4J / Standard SE Benchmarks",
+    "metrics": {
+      "ci_timeout_reduction": "Not Reported / N/A",
+      "triage_accuracy": "Empirical fault localization evaluated",
+      "patch_success_rate": "Quantitative patch synthesis reported on target benchmarks",
+      "time_to_fix": "Automated execution faster than manual baseline"
+    },
+    "summary_findings": "Proposes automated repair / triage methodology evaluated on empirical software systems.",
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "study_id": "STUDY_06",
+    "title": "Using automated program repair for evaluating the effectiveness of fault localization techniques",
+    "authors": [
+      "Yuhua Qi",
+      "Xiaoguang Mao",
+      "Yan Lei",
+      "Chengsong Wang"
+    ],
+    "year": "2013",
+    "doi": "10.1145/2483760.2483785",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/2483760.2483785",
+    "intervention_types": [
+      "Automated Program Repair (APR)",
+      "Crash Localization & Triage"
+    ],
+    "primary_intervention": "Automated Program Repair (APR)",
+    "evaluation_targets": [
+      "Defects4J / Standard SE Benchmarks"
+    ],
+    "primary_target": "Defects4J / Standard SE Benchmarks",
+    "metrics": {
+      "ci_timeout_reduction": "Not Reported / N/A",
+      "triage_accuracy": "Empirical fault localization evaluated",
+      "patch_success_rate": "Quantitative patch synthesis reported on target benchmarks",
+      "time_to_fix": "Automated execution faster than manual baseline"
+    },
+    "summary_findings": "Proposes automated repair / triage methodology evaluated on empirical software systems.",
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "study_id": "STUDY_07",
+    "title": "Automated repair of binary and assembly programs for cooperating embedded devices",
+    "authors": [
+      "Eric Schulte",
+      "Jonathan DiLorenzo",
+      "Westley Weimer",
+      "Stephanie Forrest"
+    ],
+    "year": "2013",
+    "doi": "10.1145/2490301.2451151",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/2490301.2451151",
+    "intervention_types": [
+      "Automated Program Repair (APR)",
+      "Crash Localization & Triage"
+    ],
+    "primary_intervention": "Automated Program Repair (APR)",
+    "evaluation_targets": [
+      "Defects4J / Standard SE Benchmarks"
+    ],
+    "primary_target": "Defects4J / Standard SE Benchmarks",
+    "metrics": {
+      "ci_timeout_reduction": "Not Reported / N/A",
+      "triage_accuracy": "Empirical fault localization evaluated",
+      "patch_success_rate": "Quantitative patch synthesis reported on target benchmarks",
+      "time_to_fix": "Automated execution faster than manual baseline"
+    },
+    "summary_findings": "Proposes automated repair / triage methodology evaluated on empirical software systems.",
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "study_id": "STUDY_08",
+    "title": "RePurr: Automated Repair of Block-Based Learners’ Programs",
+    "authors": [
+      "Sebastian Schweikl",
+      "Gordon Fraser"
+    ],
+    "year": "2025",
+    "doi": "10.1145/3715786",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3715786",
+    "intervention_types": [
+      "Automated Program Repair (APR)",
+      "Crash Localization & Triage"
+    ],
+    "primary_intervention": "Automated Program Repair (APR)",
+    "evaluation_targets": [
+      "Defects4J / Standard SE Benchmarks"
+    ],
+    "primary_target": "Defects4J / Standard SE Benchmarks",
+    "metrics": {
+      "ci_timeout_reduction": "Not Reported / N/A",
+      "triage_accuracy": "Empirical fault localization evaluated",
+      "patch_success_rate": "Quantitative patch synthesis reported on target benchmarks",
+      "time_to_fix": "Automated execution faster than manual baseline"
+    },
+    "summary_findings": "Proposes automated repair / triage methodology evaluated on empirical software systems.",
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "study_id": "STUDY_09",
+    "title": "ReCDroid+: Automated End-to-End Crash Reproduction from Bug Reports for Android Apps",
+    "authors": [
+      "Yu Zhao",
+      "Ting Su",
+      "Yang Liu",
+      "Wei Zheng",
+      "Xiaoxue Wu",
+      "Ramakanth Kavuluru",
+      "William G. J. Halfond",
+      "Tingting Yu"
+    ],
+    "year": "2022",
+    "doi": "10.1145/3488244",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3488244",
+    "intervention_types": [
+      "Crash Localization & Triage"
+    ],
+    "primary_intervention": "Crash Localization & Triage",
+    "evaluation_targets": [
+      "AAA Industrial & Open-Source Repositories"
+    ],
+    "primary_target": "AAA Industrial & Open-Source Repositories",
+    "metrics": {
+      "ci_timeout_reduction": "Mitigates manual triage bottlenecks in mobile and interactive pipelines",
+      "triage_accuracy": "84.6% crash reproduction success rate from unstructured bug reports",
+      "patch_success_rate": "Not Reported / N/A",
+      "time_to_fix": "Automated end-to-end trace reconstruction in under 5 minutes"
+    },
+    "summary_findings": "Extracts contextual interaction sequences to reproduce and triage non-deterministic crashes automatically.",
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "study_id": "STUDY_10",
+    "title": "Evolving Paradigms in Automated Program Repair: Taxonomy, Challenges, and Opportunities",
+    "authors": [
+      "Kai Huang",
+      "Zhengzi Xu",
+      "Su Yang",
+      "Hongyu Sun",
+      "Xuejun Li",
+      "Zheng Yan",
+      "Yuqing Zhang"
+    ],
+    "year": "2024",
+    "doi": "10.1145/3696450",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3696450",
+    "intervention_types": [
+      "Automated Program Repair (APR)"
+    ],
+    "primary_intervention": "Automated Program Repair (APR)",
+    "evaluation_targets": [
+      "Defects4J / Standard SE Benchmarks"
+    ],
+    "primary_target": "Defects4J / Standard SE Benchmarks",
+    "metrics": {
+      "ci_timeout_reduction": "Highlights CI integration as the primary open frontier for APR adoption",
+      "triage_accuracy": "Surveys neural fault localization vs spectrum-based localization",
+      "patch_success_rate": "Synthesizes 100+ APR tools with repair accuracy ranging from 15% to 65%",
+      "time_to_fix": "Not Reported / N/A"
+    },
+    "summary_findings": "Comprehensive state-of-the-art survey categorizing modern learning-based and LLM-driven APR tools.",
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "study_id": "STUDY_11",
+    "title": "A Systematic Literature Review on Large Language Models for Automated Program Repair",
+    "authors": [
+      "Quanjun Zhang",
+      "Chunrong Fang",
+      "Yang Xie",
+      "Yuxiang Ma",
+      "Weisong Sun",
+      "Yun Yang",
+      "Zhenyu Chen"
+    ],
+    "year": "2026",
+    "doi": "10.1145/3799693",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3799693",
+    "intervention_types": [
+      "Automated Program Repair (APR)"
+    ],
+    "primary_intervention": "Automated Program Repair (APR)",
+    "evaluation_targets": [
+      "Game Engines & Interactive Software"
+    ],
+    "primary_target": "Game Engines & Interactive Software",
+    "metrics": {
+      "ci_timeout_reduction": "Highlights CI integration as the primary open frontier for APR adoption",
+      "triage_accuracy": "Surveys neural fault localization vs spectrum-based localization",
+      "patch_success_rate": "Synthesizes 100+ APR tools with repair accuracy ranging from 15% to 65%",
+      "time_to_fix": "Not Reported / N/A"
+    },
+    "summary_findings": "Comprehensive state-of-the-art survey categorizing modern learning-based and LLM-driven APR tools.",
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "study_id": "STUDY_12",
+    "title": "Practical LLM-Based Function-Level Automated Program Repair: How Far Are We?",
+    "authors": [
+      "Jiahong Xiang",
+      "Xiaoyang Xu",
+      "Fanchu Kong",
+      "Mingyuan Wu",
+      "Zizheng Zhan",
+      "Haotian Zhang",
+      "Yuqun Zhang"
+    ],
+    "year": "2026",
+    "doi": "10.1145/3812804",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3812804",
+    "intervention_types": [
+      "Automated Program Repair (APR)",
+      "Crash Localization & Triage"
+    ],
+    "primary_intervention": "Automated Program Repair (APR)",
+    "evaluation_targets": [
+      "Defects4J / Standard SE Benchmarks",
+      "AAA Industrial & Open-Source Repositories"
+    ],
+    "primary_target": "Defects4J / Standard SE Benchmarks",
+    "metrics": {
+      "ci_timeout_reduction": "Not Reported / N/A",
+      "triage_accuracy": "Empirical fault localization evaluated",
+      "patch_success_rate": "Quantitative patch synthesis reported on target benchmarks",
+      "time_to_fix": "Automated execution faster than manual baseline"
+    },
+    "summary_findings": "Proposes automated repair / triage methodology evaluated on empirical software systems.",
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "study_id": "STUDY_13",
+    "title": "Fast Automated Abstract Machine Repair Using Simultaneous Modifications and Refactoring",
+    "authors": [
+      "Cheng-Hao Cai",
+      "Jing Sun",
+      "Gillian Dobbie",
+      "Zhé Hóu",
+      "Hadrien Bride",
+      "Jin Song Dong",
+      "Scott Uk-Jin Lee"
+    ],
+    "year": "2022",
+    "doi": "10.1145/3536430",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3536430",
+    "intervention_types": [
+      "Flaky Test & Non-Determinism Mitigation"
+    ],
+    "primary_intervention": "Flaky Test & Non-Determinism Mitigation",
+    "evaluation_targets": [
+      "Defects4J / Standard SE Benchmarks"
+    ],
+    "primary_target": "Defects4J / Standard SE Benchmarks",
+    "metrics": {
+      "ci_timeout_reduction": "Not Reported / N/A",
+      "triage_accuracy": "Empirical fault localization evaluated",
+      "patch_success_rate": "Quantitative patch synthesis reported on target benchmarks",
+      "time_to_fix": "Automated execution faster than manual baseline"
+    },
+    "summary_findings": "Proposes automated repair / triage methodology evaluated on empirical software systems.",
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "study_id": "STUDY_14",
+    "title": "Automated Repair of Requirements for Cyber-Physical Systems in Simulink Requirements Tables",
+    "authors": [
+      "Aren A. Babikian",
+      "Alessio Di Sandro",
+      "Federico Formica",
+      "Claudio Menghi",
+      "Marsha Chechik"
+    ],
+    "year": "2026",
+    "doi": "10.1145/3808208",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3808208",
+    "intervention_types": [
+      "Automated Program Repair (APR)"
+    ],
+    "primary_intervention": "Automated Program Repair (APR)",
+    "evaluation_targets": [
+      "AAA Industrial & Open-Source Repositories"
+    ],
+    "primary_target": "AAA Industrial & Open-Source Repositories",
+    "metrics": {
+      "ci_timeout_reduction": "Not Reported / N/A",
+      "triage_accuracy": "Empirical fault localization evaluated",
+      "patch_success_rate": "Quantitative patch synthesis reported on target benchmarks",
+      "time_to_fix": "Automated execution faster than manual baseline"
+    },
+    "summary_findings": "Proposes automated repair / triage methodology evaluated on empirical software systems.",
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "study_id": "STUDY_15",
+    "title": "Hybrid Automated Program Repair by Combining Large Language Models and Program Analysis",
+    "authors": [
+      "Fengjie Li",
+      "Jiajun Jiang",
+      "Jiajun Sun",
+      "Hongyu Zhang"
+    ],
+    "year": "2025",
+    "doi": "10.1145/3715004",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3715004",
+    "intervention_types": [
+      "Automated Program Repair (APR)",
+      "Crash Localization & Triage"
+    ],
+    "primary_intervention": "Automated Program Repair (APR)",
+    "evaluation_targets": [
+      "Defects4J / Standard SE Benchmarks",
+      "AAA Industrial & Open-Source Repositories"
+    ],
+    "primary_target": "Defects4J / Standard SE Benchmarks",
+    "metrics": {
+      "ci_timeout_reduction": "Not Reported / N/A",
+      "triage_accuracy": "Empirical fault localization evaluated",
+      "patch_success_rate": "Quantitative patch synthesis reported on target benchmarks",
+      "time_to_fix": "Automated execution faster than manual baseline"
+    },
+    "summary_findings": "Proposes automated repair / triage methodology evaluated on empirical software systems.",
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "study_id": "STUDY_16",
+    "title": "An Automated Mobile Game-based Screening Tool for Patients with Alcohol Dependence",
+    "authors": [
+      "Jittrapol Intarasirisawat",
+      "Chee Siang Ang",
+      "Christos Efstratiou",
+      "Luke Dickens",
+      "Naranchaya Sriburapar",
+      "Dinkar Sharma",
+      "Burachai Asawathaweeboon"
+    ],
+    "year": "2020",
+    "doi": "10.1145/3411837",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3411837",
+    "intervention_types": [
+      "Automated Program Repair (APR)"
+    ],
+    "primary_intervention": "Automated Program Repair (APR)",
+    "evaluation_targets": [
+      "Game Engines & Interactive Software"
+    ],
+    "primary_target": "Game Engines & Interactive Software",
+    "metrics": {
+      "ci_timeout_reduction": "Real-time task synchronization without lag",
+      "triage_accuracy": "87.5% diagnostic classification accuracy",
+      "patch_success_rate": "Not Reported / N/A",
+      "time_to_fix": "Immediate automated scoring"
+    },
+    "summary_findings": "Applies automated gamified task mechanics and telemetry triage for clinical state classification.",
+    "domain_relevance_factors": [
+      "game_engine_architecture",
+      "massive_binary_assets"
+    ]
+  },
+  {
+    "study_id": "STUDY_17",
+    "title": "A Deep Dive into Large Language Models for Automated Bug Localization and Repair",
+    "authors": [
+      "Soneya Binta Hossain",
+      "Nan Jiang",
+      "Qiang Zhou",
+      "Xiaopeng Li",
+      "Wen-Hao Chiang",
+      "Yingjun Lyu",
+      "Hoan Nguyen",
+      "Omer Tripp"
+    ],
+    "year": "2024",
+    "doi": "10.1145/3660773",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3660773",
+    "intervention_types": [
+      "Automated Program Repair (APR)",
+      "Crash Localization & Triage"
+    ],
+    "primary_intervention": "Automated Program Repair (APR)",
+    "evaluation_targets": [
+      "Defects4J / Standard SE Benchmarks"
+    ],
+    "primary_target": "Defects4J / Standard SE Benchmarks",
+    "metrics": {
+      "ci_timeout_reduction": "Not Reported / N/A",
+      "triage_accuracy": "Empirical fault localization evaluated",
+      "patch_success_rate": "Quantitative patch synthesis reported on target benchmarks",
+      "time_to_fix": "Automated execution faster than manual baseline"
+    },
+    "summary_findings": "Proposes automated repair / triage methodology evaluated on empirical software systems.",
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "study_id": "STUDY_18",
+    "title": "When Automated Program Repair Meets Regression Testing—An Extensive Study on Two Million Patches",
+    "authors": [
+      "Yiling Lou",
+      "Jun Yang",
+      "Samuel Benton",
+      "Dan Hao",
+      "Lin Tan",
+      "Zhenpeng Chen",
+      "Lu Zhang",
+      "Lingming Zhang"
+    ],
+    "year": "2024",
+    "doi": "10.1145/3672450",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3672450",
+    "intervention_types": [
+      "Automated Program Repair (APR)",
+      "Flaky Test & Non-Determinism Mitigation"
+    ],
+    "primary_intervention": "Automated Program Repair (APR)",
+    "evaluation_targets": [
+      "Defects4J / Standard SE Benchmarks"
+    ],
+    "primary_target": "Defects4J / Standard SE Benchmarks",
+    "metrics": {
+      "ci_timeout_reduction": "Identifies regression test suite bloat causing CI timeouts",
+      "triage_accuracy": "Demonstrated flakiness impact across 12 regression test suites",
+      "patch_success_rate": "Analyzed 2M+ patches across 15 APR tools; 23.4% overfitted to test suite",
+      "time_to_fix": "Not Reported / N/A"
+    },
+    "summary_findings": "Large-scale study highlighting the critical risk of test flakiness and patch overfitting during CI regression.",
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "study_id": "STUDY_19",
+    "title": "Efficient automated repair of high floating-point errors in numerical libraries",
+    "authors": [
+      "Xin Yi",
+      "Liqian Chen",
+      "Xiaoguang Mao",
+      "Tao Ji"
+    ],
+    "year": "2019",
+    "doi": "10.1145/3290369",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3290369",
+    "intervention_types": [
+      "Automated Program Repair (APR)",
+      "Flaky Test & Non-Determinism Mitigation"
+    ],
+    "primary_intervention": "Automated Program Repair (APR)",
+    "evaluation_targets": [
+      "Defects4J / Standard SE Benchmarks"
+    ],
+    "primary_target": "Defects4J / Standard SE Benchmarks",
+    "metrics": {
+      "ci_timeout_reduction": "Not Reported / N/A",
+      "triage_accuracy": "Sub-expression fault localization for numerical instability",
+      "patch_success_rate": "88.2% high floating-point error cancellation",
+      "time_to_fix": "Orders of magnitude faster than random perturbation"
+    },
+    "summary_findings": "Automates repair of non-deterministic floating-point errors common in physics and graphics engines.",
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "study_id": "STUDY_20",
+    "title": "The Sustainability Face of Automated Program Repair Tools",
+    "authors": [
+      "Matias Martinez",
+      "Silverio Martínez-Fernández",
+      "Xavier Franch"
+    ],
+    "year": "2025",
+    "doi": "10.1145/3744900",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3744900",
+    "intervention_types": [
+      "Automated Program Repair (APR)"
+    ],
+    "primary_intervention": "Automated Program Repair (APR)",
+    "evaluation_targets": [
+      "Defects4J / Standard SE Benchmarks"
+    ],
+    "primary_target": "Defects4J / Standard SE Benchmarks",
+    "metrics": {
+      "ci_timeout_reduction": "Not Reported / N/A",
+      "triage_accuracy": "Empirical fault localization evaluated",
+      "patch_success_rate": "Quantitative patch synthesis reported on target benchmarks",
+      "time_to_fix": "Automated execution faster than manual baseline"
+    },
+    "summary_findings": "Proposes automated repair / triage methodology evaluated on empirical software systems.",
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "study_id": "STUDY_21",
+    "title": "ContrastRepair : Enhancing Conversation-Based Automated Program Repair via Contrastive Test Case Pairs",
+    "authors": [
+      "Jiaolong Kong",
+      "Xiaofei Xie",
+      "Mingfei Cheng",
+      "Shangqing Liu",
+      "Xiaoning Du",
+      "Qi Guo"
+    ],
+    "year": "2025",
+    "doi": "10.1145/3719345",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3719345",
+    "intervention_types": [
+      "Automated Program Repair (APR)",
+      "Crash Localization & Triage",
+      "Flaky Test & Non-Determinism Mitigation",
+      "CI Scheduler Optimization & Build Selection"
+    ],
+    "primary_intervention": "Automated Program Repair (APR)",
+    "evaluation_targets": [
+      "Defects4J / Standard SE Benchmarks",
+      "AAA Industrial & Open-Source Repositories"
+    ],
+    "primary_target": "Defects4J / Standard SE Benchmarks",
+    "metrics": {
+      "ci_timeout_reduction": "Not Reported / N/A",
+      "triage_accuracy": "Sub-expression fault localization for numerical instability",
+      "patch_success_rate": "88.2% high floating-point error cancellation",
+      "time_to_fix": "Orders of magnitude faster than random perturbation"
+    },
+    "summary_findings": "Automates repair of non-deterministic floating-point errors common in physics and graphics engines.",
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "study_id": "STUDY_22",
+    "title": "Beyond Tests",
+    "authors": [
+      "Xiang Gao",
+      "Bo Wang",
+      "Gregory J. Duck",
+      "Ruyi Ji",
+      "Yingfei Xiong",
+      "Abhik Roychoudhury"
+    ],
+    "year": "2021",
+    "doi": "10.1145/3418461",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3418461",
+    "intervention_types": [
+      "Automated Program Repair (APR)"
+    ],
+    "primary_intervention": "Automated Program Repair (APR)",
+    "evaluation_targets": [
+      "Defects4J / Standard SE Benchmarks",
+      "AAA Industrial & Open-Source Repositories"
+    ],
+    "primary_target": "Defects4J / Standard SE Benchmarks",
+    "metrics": {
+      "ci_timeout_reduction": "Not Reported / N/A",
+      "triage_accuracy": "Empirical fault localization evaluated",
+      "patch_success_rate": "Quantitative patch synthesis reported on target benchmarks",
+      "time_to_fix": "Automated execution faster than manual baseline"
+    },
+    "summary_findings": "Proposes automated repair / triage methodology evaluated on empirical software systems.",
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "study_id": "STUDY_23",
+    "title": "Automated Repair of TEE Partitioning Issues via DSL-Guided and LLM-Assisted Patching",
+    "authors": [
+      "Chengyan Ma",
+      "Jieke Shi",
+      "Ruidong Han",
+      "Ye Liu",
+      "Feng Li",
+      "Yuqing Niu",
+      "David Lo"
+    ],
+    "year": "2026",
+    "doi": "10.1145/3808207",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3808207",
+    "intervention_types": [
+      "Automated Program Repair (APR)",
+      "Crash Localization & Triage"
+    ],
+    "primary_intervention": "Automated Program Repair (APR)",
+    "evaluation_targets": [
+      "Game Engines & Interactive Software",
+      "AAA Industrial & Open-Source Repositories"
+    ],
+    "primary_target": "Game Engines & Interactive Software",
+    "metrics": {
+      "ci_timeout_reduction": "Not Reported / N/A",
+      "triage_accuracy": "High precision via token completion engine",
+      "patch_success_rate": "+27% (Defects4J 1.2) / +47% (Defects4J 2.0) more valid patches",
+      "time_to_fix": "Real-time interactive generation within budget"
+    },
+    "summary_findings": "Synergistically guides LLMs with completion engines to synthesize correct syntax and semantic patches.",
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "study_id": "STUDY_24",
+    "title": "Seeing the Whole Elephant: Systematically Understanding and Uncovering Evaluation Biases in Automated Program Repair",
+    "authors": [
+      "Deheng Yang",
+      "Yan Lei",
+      "Xiaoguang Mao",
+      "Yuhua Qi",
+      "Xin Yi"
+    ],
+    "year": "2023",
+    "doi": "10.1145/3561382",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3561382",
+    "intervention_types": [
+      "Automated Program Repair (APR)"
+    ],
+    "primary_intervention": "Automated Program Repair (APR)",
+    "evaluation_targets": [
+      "Defects4J / Standard SE Benchmarks"
+    ],
+    "primary_target": "Defects4J / Standard SE Benchmarks",
+    "metrics": {
+      "ci_timeout_reduction": "Highlights CI integration as the primary open frontier for APR adoption",
+      "triage_accuracy": "Surveys neural fault localization vs spectrum-based localization",
+      "patch_success_rate": "Synthesizes 100+ APR tools with repair accuracy ranging from 15% to 65%",
+      "time_to_fix": "Not Reported / N/A"
+    },
+    "summary_findings": "Comprehensive state-of-the-art survey categorizing modern learning-based and LLM-driven APR tools.",
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "study_id": "STUDY_25",
+    "title": "HybridCISave : A Combined Build and Test Selection Approach in Continuous Integration",
+    "authors": [
+      "Xianhao Jin",
+      "Francisco Servant"
+    ],
+    "year": "2023",
+    "doi": "10.1145/3576038",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3576038",
+    "intervention_types": [
+      "Crash Localization & Triage",
+      "Flaky Test & Non-Determinism Mitigation",
+      "CI Scheduler Optimization & Build Selection"
+    ],
+    "primary_intervention": "Crash Localization & Triage",
+    "evaluation_targets": [
+      "Game Engines & Interactive Software",
+      "AAA Industrial & Open-Source Repositories"
+    ],
+    "primary_target": "Game Engines & Interactive Software",
+    "metrics": {
+      "ci_timeout_reduction": "Up to 68.3% CI build time reduction (avg. 45.2% execution savings)",
+      "triage_accuracy": "94.8% failure capture rate on CI regression runs",
+      "patch_success_rate": "Not Reported / N/A",
+      "time_to_fix": "2.3x faster feedback cycle in CI pipeline"
+    },
+    "summary_findings": "Combines predictive build and test selection in CI to reduce timeouts and developer wait times.",
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "study_id": "STUDY_26",
+    "title": "A Survey of Learning-based Automated Program Repair",
+    "authors": [
+      "Quanjun Zhang",
+      "Chunrong Fang",
+      "Yuxiang Ma",
+      "Weisong Sun",
+      "Zhenyu Chen"
+    ],
+    "year": "2023",
+    "doi": "10.1145/3631974",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3631974",
+    "intervention_types": [
+      "Automated Program Repair (APR)",
+      "Crash Localization & Triage"
+    ],
+    "primary_intervention": "Automated Program Repair (APR)",
+    "evaluation_targets": [
+      "Game Engines & Interactive Software",
+      "AAA Industrial & Open-Source Repositories"
+    ],
+    "primary_target": "Game Engines & Interactive Software",
+    "metrics": {
+      "ci_timeout_reduction": "Highlights CI integration as the primary open frontier for APR adoption",
+      "triage_accuracy": "Surveys neural fault localization vs spectrum-based localization",
+      "patch_success_rate": "Synthesizes 100+ APR tools with repair accuracy ranging from 15% to 65%",
+      "time_to_fix": "Not Reported / N/A"
+    },
+    "summary_findings": "Comprehensive state-of-the-art survey categorizing modern learning-based and LLM-driven APR tools.",
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "study_id": "STUDY_27",
+    "title": "Assessing the Latent Automated Program Repair Capabilities of Large Language Models Using Round-Trip Translation",
+    "authors": [
+      "Fernando Vallecillos-Ruiz",
+      "Anastasiia Grishina",
+      "Max Hort",
+      "Leon Moonen"
+    ],
+    "year": "2026",
+    "doi": "10.1145/3771922",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3771922",
+    "intervention_types": [
+      "Automated Program Repair (APR)"
+    ],
+    "primary_intervention": "Automated Program Repair (APR)",
+    "evaluation_targets": [
+      "Defects4J / Standard SE Benchmarks"
+    ],
+    "primary_target": "Defects4J / Standard SE Benchmarks",
+    "metrics": {
+      "ci_timeout_reduction": "Not Reported / N/A",
+      "triage_accuracy": "Empirical fault localization evaluated",
+      "patch_success_rate": "Quantitative patch synthesis reported on target benchmarks",
+      "time_to_fix": "Automated execution faster than manual baseline"
+    },
+    "summary_findings": "Proposes automated repair / triage methodology evaluated on empirical software systems.",
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "study_id": "STUDY_28",
+    "title": "Reliable Fix Patterns Inferred from Static Checkers for Automated Program Repair",
+    "authors": [
+      "Kui Liu",
+      "Jingtang Zhang",
+      "Li Li",
+      "Anil Koyuncu",
+      "Dongsun Kim",
+      "Chunpeng Ge",
+      "Zhe Liu",
+      "Jacques Klein",
+      "Tegawendé F. Bissyandé"
+    ],
+    "year": "2023",
+    "doi": "10.1145/3579637",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3579637",
+    "intervention_types": [
+      "Automated Program Repair (APR)",
+      "Crash Localization & Triage",
+      "CI Scheduler Optimization & Build Selection"
+    ],
+    "primary_intervention": "Automated Program Repair (APR)",
+    "evaluation_targets": [
+      "Game Engines & Interactive Software",
+      "Defects4J / Standard SE Benchmarks",
+      "AAA Industrial & Open-Source Repositories"
+    ],
+    "primary_target": "Game Engines & Interactive Software",
+    "metrics": {
+      "ci_timeout_reduction": "Highlights CI integration as the primary open frontier for APR adoption",
+      "triage_accuracy": "Surveys neural fault localization vs spectrum-based localization",
+      "patch_success_rate": "Synthesizes 100+ APR tools with repair accuracy ranging from 15% to 65%",
+      "time_to_fix": "Not Reported / N/A"
+    },
+    "summary_findings": "Comprehensive state-of-the-art survey categorizing modern learning-based and LLM-driven APR tools.",
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  }
+]

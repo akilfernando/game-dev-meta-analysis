@@ -1,0 +1,1669 @@
+[
+  {
+    "title": "Automated Triage of Performance Change Points Using Time Series Analysis and Machine Learning",
+    "abstract": "",
+    "authors": [
+      "André Bauer",
+      "Martin Straesser",
+      "Lukas Beierlieb",
+      "Maximilian Meissner",
+      "Samuel Kounev"
+    ],
+    "publication_date": "2022-07-14",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/3491204.3527486",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3491204.3527486",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": false,
+    "pdf_local_path": null,
+    "pdf_page_count": 0,
+    "text_extracted_chars": 0,
+    "final_eligibility_status": "EXCLUDE",
+    "final_exclusion_reason": "Excluded at Full-Text: Not in computational software engineering / game domain.",
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "title": "Automated model repair for distributed programs",
+    "abstract": "Model repair is a formal method that aims at fixing bugs in models automatically. Typically, these models are finite state automata that can be compactly represented using guarded commands or variations thereof. The bugs in these models can be identified using traditional techniques, such as verification, testing, or runtime monitoring. However, these techniques do not assist in fixing bugs automatically. The goal in model repair is to automatically transform an input model into another model that satisfies additional properties (e.g., a property that the original model fails to satisfy). Moreover, such transformation should preserve the existing specification of the input model. In this article, we review the efforts in the past decade on developing model repair algorithms in different domains. These domains include distributed computing, fault-tolerance and self-stabilization, and real-time systems. We present the results on complexity analysis, techniques for tackling intractability of the problem and scalability, and related tools. The techniques and tools discussed in this article demonstrate the feasibility of automated synthesis of well-known protocols such as Byzantine agreement, token ring, fault-tolerant mutual exclusion, etc.",
+    "authors": [
+      "Borzoo Bonakdarpour",
+      "Sandeep S. Kulkarni"
+    ],
+    "publication_date": "2012-06-11",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/2261417.2261437",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/2261417.2261437",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": false,
+    "pdf_local_path": null,
+    "pdf_page_count": 0,
+    "text_extracted_chars": 0,
+    "final_eligibility_status": "INCLUDE",
+    "final_exclusion_reason": null,
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "title": "An experimental analysis of GAME",
+    "abstract": "This paper describes the Generic Automated Marking Environment (GAME) and provides a detailed analysis of its performance in assessing student programming projects and exercises. GAME has been designed to automatically assess programming assignments written in a variety of languages based on the \"structure\" of the source code and the correctness of the program's output. Currently, the system is able to mark programs written in Java, C++ and the C language. To use the system, instructors are required to provide a simple \"marking schema\" for any given assessment item, which includes pertinent information such as the location of files and the model solution. In this research, GAME has been tested on a number of student programming exercises and assignments. The results obtained, have been analysed and compared against a human marker providing encouraging results.",
+    "authors": [
+      "Michael Blumenstein",
+      "Steven Green",
+      "Ann Nguyen",
+      "Vallipuram Muthukkumarasamy"
+    ],
+    "publication_date": "2004-06-28",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/1026487.1008016",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/1026487.1008016",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": false,
+    "pdf_local_path": null,
+    "pdf_page_count": 0,
+    "text_extracted_chars": 0,
+    "final_eligibility_status": "EXCLUDE",
+    "final_exclusion_reason": "Excluded at Full-Text: Lacks explicit relevance to game engine architecture, massive assets, or non-deterministic/crash triage.",
+    "domain_relevance_factors": []
+  },
+  {
+    "title": "Copiloting the Copilots for Automated Program Repair",
+    "abstract": "During Automated Program Repair (APR), it can be challenging to synthesize correct patches for real-world systems in general-purpose programming languages. Recent large language models (LLMs) have been shown to be helpful “copilots” in assisting developers with various coding tasks, and have also been directly applied for patch synthesis. However, most LLMs treat programs as sequences of tokens, meaning that they are ignorant of the underlying semantics constraints of the target programming language. This results in plenty of statically invalid generated patches, impeding the practicality of the technique. Therefore, we propose Repilot , a general code generation framework to further copilot the AI “copilots” (i.e., LLMs) by synthesizing more valid patches during the repair process. Our key insight is that many LLMs produce outputs autoregressively (i.e., token by token), resembling human writing programs, which can be significantly boosted and guided through a Completion Engine. Repilot synergistically synthesizes a candidate patch through the interaction between an LLM and a Completion Engine, which 1) prunes away infeasible tokens suggested by the LLM and 2) proactively completes the token based on the suggestions provided by the Completion Engine. Our evaluation on a subset of the widely-used Defects4j 1.2 and 2.0 datasets shows that Repilot outperforms state-of-the-art techniques by fixing 27% and 47% more bugs, respectively. Moreover, Repilot produces more valid and correct patches than the base LLM with the same budget. While we focus on leveraging Repilot for APR in this work, the overall approach is also generalizable to other code generation tasks.",
+    "authors": [
+      "Yuxiang Wei",
+      "Chunqiu Steven Xia",
+      "Lingming Zhang"
+    ],
+    "publication_date": "2026-03-31",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/3788082",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3788082",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": false,
+    "pdf_local_path": null,
+    "pdf_page_count": 0,
+    "text_extracted_chars": 0,
+    "final_eligibility_status": "INCLUDE",
+    "final_exclusion_reason": null,
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "title": "Improving Automated Program Repair with Domain Adaptation",
+    "abstract": "Automated Program Repair (APR) is defined as the process of fixing a bug/defect in the source code, by an automated tool. APR tools have recently experienced promising results by leveraging state-of-the-art Neural Language Processing (NLP) techniques. APR tools such as TFix and CodeXGLUE that combine text-to-text transformers with software-specific techniques are outperforming alternatives, these days. However, in most APR studies, the train and test sets are chosen from the same set of projects (i.e., when APR fixes a bug in the test set from project A, the model has already seen example fixed bugs from project A in the training set). In the real world, however, APR models are meant to be generalizable to new and different projects. Therefore, there is a potential threat that reported APR models with high effectiveness perform poorly when the characteristics of the new project or its bugs are different than the training set’s (“Domain Shift”). In this study, we first define the problem of domain shift in automated program repair. Next, we measure the potential damage of domain shift on two recent APR models (TFix and CodeXGLUE). Based on this observation, we then propose a domain adaptation framework that can adapt an APR model for a given target project. We conduct an empirical study with three domain adaptation methods FullFineTuning , TuningWithLightWeightAdapterLayers , and CurriculumLearning and two APR models on 2,672 bugs from 12 projects. The results show that our proposed framework on average can improve the effectiveness of TFix by 13.05% and CodeXGLUE by 48.78%, in terms of “Exact Match”. Through experiments, we also show that the framework provides high efficiency and reliability (in terms of “Exposure Bias”). Using synthetic data to domain adapt TFix and CodeXGLUE on the projects with no data (Zero-shot learning), also results in an average improvement of 5.76% and 17.62% for TFix and CodeXGLUE, respectively.",
+    "authors": [
+      "Armin Zirak",
+      "Hadi Hemmati"
+    ],
+    "publication_date": "2024-03-15",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/3631972",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3631972",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": false,
+    "pdf_local_path": null,
+    "pdf_page_count": 0,
+    "text_extracted_chars": 0,
+    "final_eligibility_status": "INCLUDE",
+    "final_exclusion_reason": null,
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "title": "EffFix: Efficient and Effective Repair of Pointer Manipulating Programs",
+    "abstract": "This work introduces EffFix, a tool that applies a novel static analysis-driven automated program repair (APR) technique for fixing memory errors. APR tools typically rely on a given test-suite to guide the repair process. Apart from the need to provide test oracles, this reliance is also one of the main contributors to the over-fitting problem. Static analysis based APR techniques bypass these issues only to introduce new ones, such as soundness, scalability, and generalizability. This work demonstrates how we can overcome these challenges and achieve sound memory bug repair at scale by leveraging static analysis (specifically incorrectness separation logic (ISL)) to guide repair. This is the first repair approach to use ISL. Our key insight is that the abstract domain used by static analysis to detect the bugs also contains key information to derive correct patches. Our proposed approach learns what a desirable patch is by inspecting how close a patch is to fixing the bug based on the feedback from ISL based static analysis (specifically the Pulse analyzer), and turning this information into a distribution of probabilities over context free grammars. This approach to repair is generic in that its learning strategy allows for finding patches without relying on the commonly used patch templates. Furthermore, to achieve efficient program repair, instead of focusing on heuristics for reducing the search space of patches, we make repair scalable by creating classes of equivalent patches according to the effect they have on the symbolic heap. We then conduct candidate patch validation only once per patch equivalence class. This allows EffFix to efficiently discover quality repairs even in the presence of a large pool of patch candidates. Experimental evaluation of fixing real world memory errors in medium to large scale subjects like OpenSSL, Linux Kernel, swoole, shows the efficiency and effectiveness of EffFix— in terms of automatically producing repairs from large search spaces. In particular, EffFix has a fix ratio of 66% for memory leak bugs and 83% for Null Pointer Dereferences for the considered dataset.",
+    "authors": [
+      "Yuntong Zhang",
+      "Andreea Costea",
+      "Ridwan Shariffdeen",
+      "Davin McCall",
+      "Abhik Roychoudhury"
+    ],
+    "publication_date": "2025-02-20",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/3705310",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3705310",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": false,
+    "pdf_local_path": null,
+    "pdf_page_count": 0,
+    "text_extracted_chars": 0,
+    "final_eligibility_status": "INCLUDE",
+    "final_exclusion_reason": null,
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "title": "Automated repair of binary and assembly programs for cooperating embedded devices",
+    "abstract": "We present a method for automatically repairing arbitrary software defects in embedded systems, which have limited memory, disk and CPU capacities, but exist in great numbers. We extend evolutionary computation (EC) algorithms that search for valid repairs at the source code level to assembly and ELF format binaries, compensating for limited system resources with several algorithmic innovations. Our method does not require access to the source code or build toolchain of the software under repair, does not require program instrumentation, specialized execution environments, or virtual machines, or prior knowledge of the bug type. We repair defects in ARM and x86 assembly as well as ELF binaries, observing decreases of 86% in memory and 95% in disk requirements, with 62% decrease in repair time, compared to similar source-level techniques. These advances allow repairs previously possible only with C source code to be applied to any ARM or x86 assembly or ELF executable. Efficiency gains are achieved by introducing stochastic fault localization, with much lower overhead than comparable deterministic methods, and low-level program representations. When distributed over multiple devices, our algorithm finds repairs faster than predicted by naive parallelism. Four devices using our approach are five times more efficient than a single device because of our collaboration model. The algorithm is implemented on Nokia N900 smartphones, with inter-phone communication fitting in 900 bytes sent in 7 SMS text messages per device per repair on average.",
+    "authors": [
+      "Eric Schulte",
+      "Jonathan DiLorenzo",
+      "Westley Weimer",
+      "Stephanie Forrest"
+    ],
+    "publication_date": "2013-03-16",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/2499368.2451151",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/2499368.2451151",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": false,
+    "pdf_local_path": null,
+    "pdf_page_count": 0,
+    "text_extracted_chars": 0,
+    "final_eligibility_status": "INCLUDE",
+    "final_exclusion_reason": null,
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "title": "Using automated program repair for evaluating the effectiveness of fault localization techniques",
+    "abstract": "",
+    "authors": [
+      "Yuhua Qi",
+      "Xiaoguang Mao",
+      "Yan Lei",
+      "Chengsong Wang"
+    ],
+    "publication_date": "2013-07-15",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/2483760.2483785",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/2483760.2483785",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": false,
+    "pdf_local_path": null,
+    "pdf_page_count": 0,
+    "text_extracted_chars": 0,
+    "final_eligibility_status": "INCLUDE",
+    "final_exclusion_reason": null,
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "title": "Automated repair of binary and assembly programs for cooperating embedded devices",
+    "abstract": "We present a method for automatically repairing arbitrary software defects in embedded systems, which have limited memory, disk and CPU capacities, but exist in great numbers. We extend evolutionary computation (EC) algorithms that search for valid repairs at the source code level to assembly and ELF format binaries, compensating for limited system resources with several algorithmic innovations. Our method does not require access to the source code or build toolchain of the software under repair, does not require program instrumentation, specialized execution environments, or virtual machines, or prior knowledge of the bug type. We repair defects in ARM and x86 assembly as well as ELF binaries, observing decreases of 86% in memory and 95% in disk requirements, with 62% decrease in repair time, compared to similar source-level techniques. These advances allow repairs previously possible only with C source code to be applied to any ARM or x86 assembly or ELF executable. Efficiency gains are achieved by introducing stochastic fault localization, with much lower overhead than comparable deterministic methods, and low-level program representations. When distributed over multiple devices, our algorithm finds repairs faster than predicted by naive parallelism. Four devices using our approach are five times more efficient than a single device because of our collaboration model. The algorithm is implemented on Nokia N900 smartphones, with inter-phone communication fitting in 900 bytes sent in 7 SMS text messages per device per repair on average.",
+    "authors": [
+      "Eric Schulte",
+      "Jonathan DiLorenzo",
+      "Westley Weimer",
+      "Stephanie Forrest"
+    ],
+    "publication_date": "2013-03-16",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/2490301.2451151",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/2490301.2451151",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": false,
+    "pdf_local_path": null,
+    "pdf_page_count": 0,
+    "text_extracted_chars": 0,
+    "final_eligibility_status": "INCLUDE",
+    "final_exclusion_reason": null,
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "title": "RePurr: Automated Repair of Block-Based Learners’ Programs",
+    "abstract": "Programming is increasingly taught using dedicated block-based programming environments such as Scratch. While the use of blocks instead of text prevents syntax errors, learners can still make semantic mistakes implying a need for feedback and help. Since teachers may be overwhelmed by help requests in a classroom, may not have the required programming education themselves, and may simply not be available in independent learning scenarios, automated hint generation is desirable. Automated program repair can provide the foundation for automated hints, but relies on multiple assumptions: (1) Program repair usually aims to produce localized patches for fixing single bugs, but learners may fundamentally misunderstand programming concepts and tasks or request help for substantially incomplete programs. (2) Software tests are required to guide the search and to localize broken statements, but test suites for block-based programs are different to those considered in past research on fault localization and repair: They consist of system tests, where very few tests are sufficient to fully cover the code. At the same time, these tests have vastly longer execution times caused by the use of animations and interactions on Scratch programs, thus inhibiting the applicability of metaheuristic search. (3) The plastic surgery hypothesis assumes that the code necessary for repairs already exists in the codebase. Block-based programs tend to be small and may lack this necessary redundancy. In order to study whether automated program repair of block-based programs is nevertheless feasible, in this paper we introduce, to the best of our knowledge, the first automated program repair approach for Scratch programs based on evolutionary search. Our RePurr prototype includes novel refinements of fault localization to improve the lack of guidance of the test suites, recovers the plastic surgery hypothesis by exploiting that a learning scenario provides model and student solutions as alternatives, and uses parallelization and accelerated executions to reduce the costs of fitness evaluations. Empirical evaluation of RePurr on a set of real learners' programs confirms the anticipated challenges, but also demonstrates that the repair can nonetheless effectively improve and fix learners' programs, thus enabling automated generation of hints and feedback for learners.",
+    "authors": [
+      "Sebastian Schweikl",
+      "Gordon Fraser"
+    ],
+    "publication_date": "2025-06-19",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/3715786",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3715786",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": false,
+    "pdf_local_path": null,
+    "pdf_page_count": 0,
+    "text_extracted_chars": 0,
+    "final_eligibility_status": "INCLUDE",
+    "final_exclusion_reason": null,
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "title": "Performance analysis of the ANGEL system for automated control of game traffic prioritisation",
+    "abstract": "",
+    "authors": [
+      "Jason But",
+      "Thuy Nguyen",
+      "Lawrence Stewart",
+      "Nigel Williams",
+      "Grenville Armitage"
+    ],
+    "publication_date": "2007-09-19",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/1326257.1326279",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/1326257.1326279",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": false,
+    "pdf_local_path": null,
+    "pdf_page_count": 0,
+    "text_extracted_chars": 0,
+    "final_eligibility_status": "EXCLUDE",
+    "final_exclusion_reason": "Excluded at Full-Text: Lacks focus on CI timeouts, crash triage, or automated program repair.",
+    "domain_relevance_factors": []
+  },
+  {
+    "title": "Automated regression testing of BPMN 2.0 processes: a capture and replay framework for continuous delivery",
+    "abstract": "Regression testing is a form of software quality assurance (QA) that involves comparing the behavior of a newer version of a software artifact to its earlier correct behavior, and signaling the QA engineer when deviations are detected. Given the large potential in automated generation and execution of regression test cases for business process models in the context of running systems, powerful tools are required to make this practically feasible, more specifically to limit the potential impact on production systems, and to reduce the manual effort required from QA engineers. In this paper, we present a regression testing automation framework that implements the capture &amp; replay paradigm in the context of BPMN 2.0, a domain-specific language for modeling and executing business processes. The framework employs parallelization techniques and efficient communication patterns to reduce the performance overhead of capturing. Based on inputs from the QA engineer, it manipulates the BPMN2 model before executing tests for isolating the latter from external dependencies (e.g. human actors or expensive web services) and for avoiding undesired side-effects. Finally, it performs a regression detection algorithm and reports the results to the QA engineer. We have implemented our framework on top of a BPMN2-compliant execution engine, namely jBPM, and performed functional validations and evaluations of its performance and fault-tolerance. The results, indicating 3.9% average capturing performance overhead, demonstrate that the implemented framework can be the foundation of a practical regression testing tool for BPMN 2.0, and a key enabler for continuous delivery of business process-driven applications and services.",
+    "authors": [
+      "Majid Makki",
+      "Dimitri Van Landuyt",
+      "Wouter Joosen"
+    ],
+    "publication_date": "2016-10-20",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/3093335.2993257",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3093335.2993257",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": false,
+    "pdf_local_path": null,
+    "pdf_page_count": 0,
+    "text_extracted_chars": 0,
+    "final_eligibility_status": "EXCLUDE",
+    "final_exclusion_reason": "Excluded at Full-Text: Lacks explicit relevance to game engine architecture, massive assets, or non-deterministic/crash triage.",
+    "domain_relevance_factors": []
+  },
+  {
+    "title": "Vulnerability Repair via Concolic Execution and Code Mutations",
+    "abstract": "Security vulnerabilities detected via techniques like greybox fuzzing are often fixed with a significant time lag. This increases the exposure of the software to vulnerabilities. Automated fixing of vulnerabilities where a tool can generate fix suggestions is thus of value. In this work, we present such a tool, called CrashRepair , to automatically generate fix suggestions using concolic execution, specification inference, and search techniques. Our approach avoids generating fix suggestions merely at the crash location because such fixes often disable the manifestation of the error instead of fixing the error. Instead, based on sanitizer-guided concolic execution, we infer desired constraints at specific program locations and then opportunistically search for code mutations that help respect those constraints. Our technique only requires a single detected vulnerability or exploit as input; it does not require any user-provided properties. Evaluation results on a wide variety of CVEs in the VulnLoc benchmark, show CrashRepair achieves greater efficacy than state-of-the-art vulnerability repair tools like Senx. The repairs suggested come in the form of a ranked set of patches at different locations, and we show that on most occasions, the desired fix is among the top-3 fixes reported by CrashRepair .",
+    "authors": [
+      "Ridwan Shariffdeen",
+      "Christopher S. Timperley",
+      "Yannic Noller",
+      "Claire Le Goues",
+      "Abhik Roychoudhury"
+    ],
+    "publication_date": "2025-04-26",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/3707454",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3707454",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": false,
+    "pdf_local_path": null,
+    "pdf_page_count": 0,
+    "text_extracted_chars": 0,
+    "final_eligibility_status": "EXCLUDE",
+    "final_exclusion_reason": "Excluded at Full-Text: Lacks explicit relevance to game engine architecture, massive assets, or non-deterministic/crash triage.",
+    "domain_relevance_factors": []
+  },
+  {
+    "title": "ReCDroid+: Automated End-to-End Crash Reproduction from Bug Reports for Android Apps",
+    "abstract": "The large demand of mobile devices creates significant concerns about the quality of mobile applications (apps). Developers heavily rely on bug reports in issue tracking systems to reproduce failures (e.g., crashes). However, the process of crash reproduction is often manually done by developers, making the resolution of bugs inefficient, especially given that bug reports are often written in natural language. To improve the productivity of developers in resolving bug reports, in this paper, we introduce a novel approach, called ReCDroid+, that can automatically reproduce crashes from bug reports for Android apps. ReCDroid+ uses a combination of natural language processing (NLP) , deep learning, and dynamic GUI exploration to synthesize event sequences with the goal of reproducing the reported crash. We have evaluated ReCDroid+ on 66 original bug reports from 37 Android apps. The results show that ReCDroid+ successfully reproduced 42 crashes (63.6% success rate) directly from the textual description of the manually reproduced bug reports. A user study involving 12 participants demonstrates that ReCDroid+ can improve the productivity of developers when resolving crash bug reports.",
+    "authors": [
+      "Yu Zhao",
+      "Ting Su",
+      "Yang Liu",
+      "Wei Zheng",
+      "Xiaoxue Wu",
+      "Ramakanth Kavuluru",
+      "William G. J. Halfond",
+      "Tingting Yu"
+    ],
+    "publication_date": "2022-03-07",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/3488244",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3488244",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": false,
+    "pdf_local_path": null,
+    "pdf_page_count": 0,
+    "text_extracted_chars": 0,
+    "final_eligibility_status": "INCLUDE",
+    "final_exclusion_reason": null,
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "title": "Evolving Paradigms in Automated Program Repair: Taxonomy, Challenges, and Opportunities",
+    "abstract": "With the rapid development and large-scale popularity of program software, modern society increasingly relies on software systems. However, the problems exposed by software have also come to the fore. The software bug has become an important factor troubling developers. In this context, Automated Program Repair (APR) techniques have emerged, aiming to automatically fix software bug problems and reduce manual debugging work. In particular, benefiting from the advances in deep learning, numerous learning-based APR techniques have emerged in recent years, which also bring new opportunities for APR research. To give researchers a quick overview of APR techniques’ complete development and future opportunities, we review the evolution of APR techniques and discuss in depth the latest advances in APR research. In this article, the development of APR techniques is introduced in terms of four different patch generation schemes: search-based, constraint-based, template-based, and learning-based. Moreover, we propose a uniform set of criteria to review and compare each APR tool and then discuss the current state of APR development. Finally, we analyze current challenges and future directions, especially highlighting the critical opportunities that large language models bring to APR research.",
+    "authors": [
+      "Kai Huang",
+      "Zhengzi Xu",
+      "Su Yang",
+      "Hongyu Sun",
+      "Xuejun Li",
+      "Zheng Yan",
+      "Yuqing Zhang"
+    ],
+    "publication_date": "2024-10-10",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/3696450",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3696450",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": false,
+    "pdf_local_path": null,
+    "pdf_page_count": 0,
+    "text_extracted_chars": 0,
+    "final_eligibility_status": "INCLUDE",
+    "final_exclusion_reason": null,
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "title": "Including Performance Benchmarks into Continuous Integration to Enable DevOps",
+    "abstract": "The DevOps movement intends to improve communication, collaboration, and integration between software developers (Dev) and IT operations professionals (Ops). Automation of software quality assurance is key to DevOps success. We present how automated performance benchmarks may be included into continuous integration. As an example, we report on regression benchmarks for application monitoring frameworks and illustrate the inclusion of automated benchmarks into continuous integration setups.",
+    "authors": [
+      "Jan Waller",
+      "Nils C. Ehmke",
+      "Wilhelm Hasselbring"
+    ],
+    "publication_date": "2015-04-03",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/2735399.2735416",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/2735399.2735416",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": false,
+    "pdf_local_path": null,
+    "pdf_page_count": 0,
+    "text_extracted_chars": 0,
+    "final_eligibility_status": "EXCLUDE",
+    "final_exclusion_reason": "Excluded at Full-Text: Lacks explicit relevance to game engine architecture, massive assets, or non-deterministic/crash triage.",
+    "domain_relevance_factors": []
+  },
+  {
+    "title": "Mobio threat",
+    "abstract": "Pervasive gaming is a new genre that became possible due to the development of communication technologies, especially wireless ones. In this area of gaming, players must physically walk to certain places of the game area to reach their objectives and missions. They may also interact with the environment and with real objects. Nowadays, there are just a few pervasive games developed, and all of them have limitations concerning localization tracking, hardware flexibility, signal coverage, and cheap setup. In this context, an innovative game, called moBIO Threat // Disease Control , was developed on the basis of the integration of multiple wireless technologies, mixing their capabilities and neutralizing their limitations. It utilizes RFID, IrDA, and QR Code technologies for object interaction, Bluetooth for exchanging information between players who are physically close and the IEEE 802.11 Wi-Fi protocol to connect all of the players with the game server. From what we observed, moBIO Threat provides a completely different game experience, with social gaming and collaboration being strong attributes of the game. This article describes the development of the game and other details about the project and about pervasive gaming.",
+    "authors": [
+      "Wilian Segatto",
+      "Eduardo Herzer",
+      "Cristiano L. Mazzotti",
+      "João R. Bittencourt",
+      "Jorge Barbosa"
+    ],
+    "publication_date": "2008-10",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/1394021.1394032",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/1394021.1394032",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": false,
+    "pdf_local_path": null,
+    "pdf_page_count": 0,
+    "text_extracted_chars": 0,
+    "final_eligibility_status": "EXCLUDE",
+    "final_exclusion_reason": "Excluded at Full-Text: Lacks explicit relevance to game engine architecture, massive assets, or non-deterministic/crash triage.",
+    "domain_relevance_factors": []
+  },
+  {
+    "title": "Automated Pricing in a Multiagent Prediction Market Using a Partially Observable Stochastic Game",
+    "abstract": "Prediction markets offer an efficient market-based mechanism to aggregate large amounts of dispersed or distributed information from different people to predict the possible outcome of future events. Recently, automated prediction markets where software trading agents perform market operations such as trading and updating beliefs on behalf of humans have been proposed. A challenging aspect in automated prediction markets is to develop suitable techniques that can be used by automated trading agents to update the price at which they should trade securities related to an event so that they can increase their profit. This problem is nontrivial, as the decision to trade and the price at which trading should occur depends on several dynamic factors, such as incoming information related to the event for which the security is being traded, the belief-update mechanism and risk attitude of the trading agent, and the trading decision and trading prices of other agents. To address this problem, we have proposed a new behavior model for trading agents based on a game-theoretic framework called partially observable stochastic game with information (POSGI). We propose a correlated equilibrium (CE)-based solution strategy for this game that allows each agent to dynamically choose an action (to buy or sell or hold) in the prediction market. We have also performed extensive simulation experiments using the data obtained from the Intrade prediction market for four different prediction markets. Our results show that our POSGI model and CE strategy produces prices that are strongly correlated with the prices of the real prediction markets. Results comparing our CE strategy with five other strategies commonly used in similar market show that our CE strategy improves price predictions and provides higher utilities to the agents compared to other existing strategies.",
+    "authors": [
+      "Janyl Jumadinova",
+      "Prithviraj Dasgupta"
+    ],
+    "publication_date": "2015-07-29",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/2700488",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/2700488",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": false,
+    "pdf_local_path": null,
+    "pdf_page_count": 0,
+    "text_extracted_chars": 0,
+    "final_eligibility_status": "EXCLUDE",
+    "final_exclusion_reason": "Excluded at Full-Text: Lacks explicit relevance to game engine architecture, massive assets, or non-deterministic/crash triage.",
+    "domain_relevance_factors": []
+  },
+  {
+    "title": "Element-Based Automated DNN Repair with Fine-Tuned Masked Language Model",
+    "abstract": "Deep Neural Networks (DNNs) are prevalent across a wide range of applications. Despite their success, the complexity and opaque nature of DNNs pose significant challenges in debugging and repairing DNN models, limiting their reliability and broader adoption. In this paper, we propose MLM4DNN, an element-based automated DNN repair method. Unlike previous techniques that focus on post-training adjustments or rely heavily on predefined bug patterns, MLM4DNN repairs DNNs by leveraging a fine-tuned Masked Language Model (MLM) to predict correct fixes for nine predefined key elements in DNNs. We construct a large-scale dataset by masking nine key elements from the correct DNN source code and then force the MLM to restore the correct elements to learn the deep semantics that ensure the normal functionalities of DNNs. Afterwards, a light-weight static analysis tool is designed to filter out low-quality patches to enhance the repair efficiency. We introduce a patch validation method specifically for DNN repair tasks, which consists of three evaluation metrics from different aspects to model the effectiveness of generated patches. We construct a benchmark, Benchmark APR 4 DNN , including 51 buggy DNN models and an evaluation tool that outputs the three metrics. We evaluate MLM4DNN against six baselines on Benchmark APR 4 DNN , and results show that MLM4DNN outperforms all state-of-the-art baselines, including two dynamic-based and four zero-shot learning-based methods. After applying the fine-tuned MLM design to several prevalent Large Language Models (LLMs), we consistently observe improved performance in DNN repair tasks compared to the original LLMs, which demonstrates the effectiveness of the method proposed in this paper.",
+    "authors": [
+      "Xu Wang",
+      "Mingming Zhang",
+      "Xiangxin Meng",
+      "Jian Zhang",
+      "Yang Liu",
+      "Chunming Hu"
+    ],
+    "publication_date": "2025-06-19",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/3715716",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3715716",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": false,
+    "pdf_local_path": null,
+    "pdf_page_count": 0,
+    "text_extracted_chars": 0,
+    "final_eligibility_status": "EXCLUDE",
+    "final_exclusion_reason": "Excluded at Full-Text: Lacks explicit relevance to game engine architecture, massive assets, or non-deterministic/crash triage.",
+    "domain_relevance_factors": []
+  },
+  {
+    "title": "A Systematic Literature Review on Large Language Models for Automated Program Repair",
+    "abstract": "Automated Program Repair (APR) attempts to patch software bugs and reduce manual debugging efforts. Very recently, with the advances in Large Language Models (LLMs), a rapidly increasing number of APR techniques have been proposed, significantly facilitating software development and maintenance and demonstrating remarkable performance. However, due to ongoing explorations in the LLM-based APR field, it is challenging for researchers to understand the current achievements, challenges, and potential opportunities. This work provides the first systematic literature review to summarize the applications of LLMs in APR between 2020 and 2025. We analyze 189 relevant papers from LLMs, APR and their integration perspectives. First, we categorize existing popular LLMs that are applied to support APR and outline four types of utilization strategies for their deployment. Besides, we detail some specific repair scenarios that benefit from LLMs, e.g., semantic bugs and security vulnerabilities. Furthermore, we discuss several critical aspects of integrating LLMs into APR research, e.g., input forms and open science. Finally, we highlight a set of challenges remaining to be investigated and the potential guidelines for future research. Overall, our paper provides a systematic overview of the research landscape to the APR community, helping researchers gain a comprehensive understanding of achievements and promote future research. Our artifacts are publicly available at the GitHub repository: https://github.com/iSEngLab/AwesomeLLM4APR .",
+    "authors": [
+      "Quanjun Zhang",
+      "Chunrong Fang",
+      "Yang Xie",
+      "Yuxiang Ma",
+      "Weisong Sun",
+      "Yun Yang",
+      "Zhenyu Chen"
+    ],
+    "publication_date": "2026-03-02",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/3799693",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3799693",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": false,
+    "pdf_local_path": null,
+    "pdf_page_count": 0,
+    "text_extracted_chars": 0,
+    "final_eligibility_status": "INCLUDE",
+    "final_exclusion_reason": null,
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "title": "Practical LLM-Based Function-Level Automated Program Repair: How Far Are We?",
+    "abstract": "Recently, multiple Automated Program Repair (APR) techniques based on Large Language Models (LLMs) have been proposed to enhance the repair performance. While these techniques mainly focus on the single-line or hunk-level repair, they face significant challenges in real-world applications due to the limited repair task scope and costly statement-level fault localization. However, the more practical function-level APR, which broadens the scope of APR task to fix entire buggy functions and requires only cost-efficient function-level fault localization, remains underexplored. In this paper, we conduct a comprehensive study of LLM-based function-level APR including investigating the effect of the few-shot learning mechanism and the auxiliary repair-relevant information. Specifically, we adopt six widely-studied LLMs and construct a benchmark on both the Defects4J 1.2 and 2.0 datasets. Our study demonstrates that LLMs with zero-shot learning are already powerful function-level APR techniques, while applying the few-shot learning mechanism leads to disparate repair performance. Moreover, we find that directly applying the auxiliary repair-relevant information to LLMs significantly increases function-level repair performance and even outperforms multiple recent APR techniques. Inspired by our findings, we propose an LLM-based function-level APR technique, namely SRepair , which adopts a dual-LLM framework to leverage the power of the auxiliary repair-relevant information for advancing the repair performance. The evaluation results demonstrate that SRepair can correctly fix 227 single-function bugs in the Defects4J dataset, largely surpassing all previous APR techniques by at least 26%, without the need for the costly statement-level fault location information. Furthermore, SRepair successfully fixes 21 multi-function bugs in the Defects4J dataset, significantly outperforming other state-of-the-art APR techniques.",
+    "authors": [
+      "Jiahong Xiang",
+      "Xiaoyang Xu",
+      "Fanchu Kong",
+      "Mingyuan Wu",
+      "Zizheng Zhan",
+      "Haotian Zhang",
+      "Yuqun Zhang"
+    ],
+    "publication_date": "2026-05-18",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/3812804",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3812804",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": false,
+    "pdf_local_path": null,
+    "pdf_page_count": 0,
+    "text_extracted_chars": 0,
+    "final_eligibility_status": "INCLUDE",
+    "final_exclusion_reason": null,
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "title": "Fast Automated Abstract Machine Repair Using Simultaneous Modifications and Refactoring",
+    "abstract": "Automated model repair techniques enable machines to synthesise patches that ensure models meet given requirements. B-repair, which is an existing model repair approach, assists users in repairing erroneous models in the B formal method, but repairing large models is inefficient due to successive applications of repair. In this work, we improve the performance of B-repair using simultaneous modifications, repair refactoring, and better classifiers. The simultaneous modifications can eliminate multiple invariant violations at a time so the average time to repair each fault can be reduced. Further, the modifications can be refactored to reduce the length of repair. The purpose of using better classifiers is to perform more accurate and general repairs and avoid inefficient brute-force searches. We conducted an empirical study to demonstrate that the improved implementation leads to the entire model process achieving higher accuracy, generality, and efficiency.",
+    "authors": [
+      "Cheng-Hao Cai",
+      "Jing Sun",
+      "Gillian Dobbie",
+      "Zhé Hóu",
+      "Hadrien Bride",
+      "Jin Song Dong",
+      "Scott Uk-Jin Lee"
+    ],
+    "publication_date": "2022-06-30",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/3536430",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3536430",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": false,
+    "pdf_local_path": null,
+    "pdf_page_count": 0,
+    "text_extracted_chars": 0,
+    "final_eligibility_status": "INCLUDE",
+    "final_exclusion_reason": null,
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "title": "Automated Repair of Requirements for Cyber-Physical Systems in Simulink Requirements Tables",
+    "abstract": "The development of complex software systems, e.g., cyber-physical systems (CPSs), involves continuous evolution of both system implementations and their requirements. These two artifacts often proceed independently, creating a risk of misalignment. For example, a system may be updated due to implementation-level concerns, yielding a new version that no longer satisfies its original requirements. Traditional compliance recovery techniques, e.g., automated program repair, address this problem by modifying the system while assuming that requirements are correct. However, faulty, outdated or inadequate requirements are a well-documented challenge in practice, motivating the complementary task of requirement repair. In this paper, we propose a framework that leverages system execution data to repair misaligned CPS requirements, thereby restoring requirement-to-system compliance. Our approach evaluates the correctness of declarative requirements over time-based, real-valued signals expressed using the MATLAB Simulink Requirements Tables language. We evaluate seven variants of our framework on six real-world case studies covering 12 requirements. Results confirm the effectiveness of the proposed framework in producing correct and useful repaired requirements.",
+    "authors": [
+      "Aren A. Babikian",
+      "Alessio Di Sandro",
+      "Federico Formica",
+      "Claudio Menghi",
+      "Marsha Chechik"
+    ],
+    "publication_date": "2026-06-30",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/3808208",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3808208",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": false,
+    "pdf_local_path": null,
+    "pdf_page_count": 0,
+    "text_extracted_chars": 0,
+    "final_eligibility_status": "INCLUDE",
+    "final_exclusion_reason": null,
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "title": "Performance Monitoring in SAP HANA's Continuous Integration Process",
+    "abstract": "Development principles such as continuous integration and continuous delivery become increasingly popular in the software industry. They allow for the quick and automated build, test, and delivery of software, thereby significantly improving the overall quality assurance and release processes. In this paper, we show how to apply the ideas of continuous delivery to complex system software, as exemplified by the SAP HANA database platform. We discuss the integration of performance testing early in the delivery process and the construction of services to detect and report performance anomalies in a continuous integration process.",
+    "authors": [
+      "Kim-Thomas Rehmann",
+      "Changyun Seo",
+      "Dongwon Hwang",
+      "Binh Than Truong",
+      "Alexander Boehm",
+      "Dong Hun Lee"
+    ],
+    "publication_date": "2016-02-25",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/2897356.2897362",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/2897356.2897362",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": false,
+    "pdf_local_path": null,
+    "pdf_page_count": 0,
+    "text_extracted_chars": 0,
+    "final_eligibility_status": "EXCLUDE",
+    "final_exclusion_reason": "Excluded at Full-Text: Lacks explicit relevance to game engine architecture, massive assets, or non-deterministic/crash triage.",
+    "domain_relevance_factors": []
+  },
+  {
+    "title": "Continuous Integration Workflows in Microservice-based Systems: Performance, Failures, and Recovery",
+    "abstract": "Microservice-based architectures (MS) are designed to support modular development and shorter delivery cycles, which may influence the efficiency and resilience of continuous integration (CI) pipelines. However, the extent to which MS architectures affect CI outcomes in practice remains underexplored. To address this gap, we conduct a mixed-method empirical study on 60 MS projects and 60 non-MS GitHub projects, analyzing 464,116 CI workflow runs from MS projects and 203,371 from non-MS projects. We compare CI performance in terms of build execution time, failure frequency, recovery effort, and failure reasons. Our results show that MS projects complete builds nearly twice as fast and consume 3–4 times less virtual machine (VM) time than non-MS projects, with statistically significant differences in large systems. Despite these performance benefits, MS projects exhibit similar CI failure rates to non-MS projects (around 18–20%) and show no statistically significant differences in recovery effort, measured using code churn and number of files changed. A thematic analysis of 354 failed CI run logs in MS projects identifies five main categories of build failures, with testing-related issues dominating (54.3%). Overall, MS architectures improve CI speed and resource efficiency but introduce integration challenges that complicate CI reliability and recovery. These findings suggest that while microservice-based architectures can improve CI execution speed and resource efficiency, they do not necessarily reduce failure rates or recovery effort. This highlights the need for CI practices and tooling that specifically address integration and testing challenges in microservice-based systems.",
+    "authors": [
+      "Jasem Khelifi",
+      "Ali Ouni",
+      "Mohammed Sayagh",
+      "Mohamed Aymen Saied",
+      "Syrine Khelifi",
+      "Salah Bouktif"
+    ],
+    "publication_date": "2026-08-19",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/3828669",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3828669",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": false,
+    "pdf_local_path": null,
+    "pdf_page_count": 0,
+    "text_extracted_chars": 0,
+    "final_eligibility_status": "EXCLUDE",
+    "final_exclusion_reason": "Excluded at Full-Text: Lacks explicit relevance to game engine architecture, massive assets, or non-deterministic/crash triage.",
+    "domain_relevance_factors": []
+  },
+  {
+    "title": "LogUpdater : Automated Detection and Repair of Specific Defects in Logging Statements",
+    "abstract": "Developers write logging statements to monitor software runtime behaviors and system state. However, poorly constructed or misleading log messages can inadvertently obfuscate actual program execution patterns, thereby impeding effective software maintenance. Existing research on analyzing issues within logging statements is limited, primarily focusing on detecting a singular type of defect and relying on manual intervention for fixes rather than automated solutions. To address the limitation, we initiate a systematic study that pinpoints four specific types of defects in logging statements (i.e., statement code inconsistency, static dynamic inconsistency, temporal relation inconsistency, and readability issues) through the analysis of real-world log-centric changes. We then propose LogUpdater , a two-stage framework for automatically detecting and updating logging statements for these specific defects. In the offline stage, LogUpdater constructs a similarity-based classifier on a set of synthetic defective logging statements to identify specific defect types. During the online testing phase, this classifier first evaluates logging statements in a given code snippet to determine the necessity and type of improvements required. Then, LogUpdater constructs type-aware prompts from historical logging update changes for an LLM-based recommendation framework to suggest updates addressing these specific defects. We evaluate the effectiveness of LogUpdater on a dataset containing real-world logging changes, a synthetic dataset, and a new real-world project dataset. The results indicate that our approach is highly effective in detecting logging defects, achieving an F1-score of 0.625. Additionally, it exhibits significant improvements in suggesting precise static text and dynamic variables, with enhancements of 48.12% and 24.90%, respectively. Furthermore, LogUpdater achieves a 61.49% success rate in recommending correct updates on new real-world projects. We reported 40 problematic logging statements and their fixes to GitHub via pull requests, resulting in 25 changes confirmed and merged across 11 different projects.",
+    "authors": [
+      "Renyi Zhong",
+      "Yichen Li",
+      "Jinxi Kuang",
+      "Wenwei Gu",
+      "Yintong Huo",
+      "Michael R. Lyu"
+    ],
+    "publication_date": "2025-12-11",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/3731754",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3731754",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": false,
+    "pdf_local_path": null,
+    "pdf_page_count": 0,
+    "text_extracted_chars": 0,
+    "final_eligibility_status": "EXCLUDE",
+    "final_exclusion_reason": "Excluded at Full-Text: Lacks explicit relevance to game engine architecture, massive assets, or non-deterministic/crash triage.",
+    "domain_relevance_factors": []
+  },
+  {
+    "title": "Hybrid Automated Program Repair by Combining Large Language Models and Program Analysis",
+    "abstract": "Automated Program Repair (APR) has garnered significant attention due to its potential to streamline the bug repair process for human developers. Recently, LLM-based APR methods have shown promise in repairing real-world bugs. However, existing APR methods often utilize patches generated by LLMs without further optimization, resulting in reduced effectiveness due to the lack of program-specific knowledge. Furthermore, the evaluations of these APR methods have typically been conducted under the assumption of perfect fault localization, which may not accurately reflect their real-world effectiveness. To address these limitations, this article introduces an innovative APR approach called G iant R epair . Our approach leverages the insight that LLM-generated patches, although not necessarily correct, offer valuable guidance for the patch generation process. Based on this insight, G iant R epair first constructs patch skeletons from LLM-generated patches to confine the patch space, and then generates high-quality patches tailored to specific programs through context-aware patch generation by instantiating the skeletons. To evaluate the performance of our approach, we conduct two large-scale experiments. The results demonstrate that G iant R epair not only effectively repairs more bugs (an average of 27.78% on Defects4J v1.2 and 23.40% on Defects4J v2.0) than using LLM-generated patches directly, but also outperforms state-of-the-art APR methods by repairing at least 42 and 7 more bugs under perfect and automated fault localization scenarios, respectively.",
+    "authors": [
+      "Fengjie Li",
+      "Jiajun Jiang",
+      "Jiajun Sun",
+      "Hongyu Zhang"
+    ],
+    "publication_date": "2025-08-17",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/3715004",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3715004",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": false,
+    "pdf_local_path": null,
+    "pdf_page_count": 0,
+    "text_extracted_chars": 0,
+    "final_eligibility_status": "INCLUDE",
+    "final_exclusion_reason": null,
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "title": "Dependency-Induced Waste in Continuous Integration: An Empirical Study of Unused Dependencies in the npm Ecosystem",
+    "abstract": "Modern software systems are increasingly dependent upon code from external packages (i.e., dependencies). Building upon external packages allows software reuse to span across projects seamlessly. Package maintainers regularly release updated versions to provide new features, fix defects, and address security vulnerabilities. Due to the potential for regression, managing dependencies is not just a trivial matter of selecting the latest versions. Since it is perceived to be less risky to retain a dependency than remove it, as projects evolve, they tend to accrue dependencies, exacerbating the difficulty of dependency management. It is not uncommon for a considerable proportion of external packages to be unused by the projects that list them as a dependency. Although such unused dependencies are not required to build and run the project, updates to their dependency specifications will still trigger Continuous Integration (CI) builds. The CI builds that are initiated by updates to unused dependencies are fundamentally wasteful. Considering that CI build time is a finite resource that is directly associated with project development and service operational costs, understanding the consequences of unused dependencies within this CI context is of practical importance. In this paper, we study the CI waste that is generated by updates to unused dependencies. We collect a dataset of 20,743 commits that are solely updating dependency specifications (i.e., the package.json file), spanning 1,487 projects that adopt npm for managing their dependencies. Our findings illustrate that 55.88% of the CI build time that is associated with dependency updates is only triggered by unused dependencies. At the project level, the median project spends 56.09% of its dependency-related CI build time on updates to unused dependencies. For projects that exceed the budget of free build minutes, we find that the median percentage of billable CI build time that is wasted due to unused-dependency commits is 85.50%. Moreover, we find that automated bots are the primary producers of dependency-induced CI waste, contributing 92.93% of the CI build time that is spent on unused dependencies. The popular Dependabot is responsible for updates to unused dependencies that account for 74.52% of that waste. To mitigate the impact of unused dependencies on CI resources, we introduce D ep-s CI mitar , an approach to cut down wasted CI time by identifying and skipping CI builds that are triggered due to unused-dependency commits. A retrospective evaluation of the 20,743 studied commits shows that D ep-s CI mitar reduces wasted CI build time by 68.34% by skipping wasteful builds with a precision of 94%.",
+    "authors": [
+      "Nimmi Rashinika Weeraddana",
+      "Mahmoud Alfadel",
+      "Shane McIntosh"
+    ],
+    "publication_date": "2024-07-12",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/3660823",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3660823",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": false,
+    "pdf_local_path": null,
+    "pdf_page_count": 0,
+    "text_extracted_chars": 0,
+    "final_eligibility_status": "EXCLUDE",
+    "final_exclusion_reason": "Excluded at Full-Text: Lacks explicit relevance to game engine architecture, massive assets, or non-deterministic/crash triage.",
+    "domain_relevance_factors": []
+  },
+  {
+    "title": "Automated Detection and Repair of Floating-point Precision Problems in Convolutional Neural Network Operators",
+    "abstract": "Convolutional Neural Network (CNN) operators, mostly based on mathematical linear computations, are of vital importance to developing CNN-based software. Existing studies reveal that these operators are prone to floating-point precision problems (FPPs). In a CNN-based application, such problems can be propagated and result in catastrophic consequences. Thus, it is highly desired to detect and repair the FPPs in CNN operators. Considering the FPPs in CNN operators are mainly caused by accumulated floating-point errors and diverse floating-point tensors instead of wrong codes or bad implementations, it requires much time cost and is difficult to tackle these FPPs. In this paper, we propose the first method for the automated detection and repair of FPPs in CNN operators from the perspective of floating-point tensors. To generate diverse tensors with floating-point numbers, we design two levels of mutation rules, namely computation-level mutation and input-level mutation, containing a total of five mutation methods. To detect the FPPs caused by the accumulated floating-point errors, our method uses a weight matrix to guide the progressive mutation. To repair the detected FPPs, our method transforms the error-prone floating-point tensors based on the mathematical rewriting of the floating-point linear computational properties without destroying the original computation. Experimental results show that our methods can detect and repair FPPs in CNN operators effectively and efficiently and could reduce 93.32% to 100% of the FPPs in CNN operators. We conduct a case study on six different widely-used CNN models and confirm that the proposed FPP method is generalizable and effective across a variety of tasks and architectures. Our detection and repair method offers an intuitive way to handle FPPs during development, allowing users to continue building and fine-tuning their models without being slowed down by numerical precision errors. We believe that our method could open up a new way to enhance the quality of CNN operators and CNN-based software.",
+    "authors": [
+      "Jiawei Liu",
+      "Xufan Zhang",
+      "Lurong Xu",
+      "Chunrong Fang",
+      "Mingzheng Gu",
+      "Weisi Luo",
+      "Dong Chai",
+      "Jiang Wang",
+      "Zhihong Zhao",
+      "Zhenyu Chen"
+    ],
+    "publication_date": "2025-01-27",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/3715104",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3715104",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": false,
+    "pdf_local_path": null,
+    "pdf_page_count": 0,
+    "text_extracted_chars": 0,
+    "final_eligibility_status": "EXCLUDE",
+    "final_exclusion_reason": "Excluded at Full-Text: Lacks explicit relevance to game engine architecture, massive assets, or non-deterministic/crash triage.",
+    "domain_relevance_factors": []
+  },
+  {
+    "title": "An Automated Mobile Game-based Screening Tool for Patients with Alcohol Dependence",
+    "abstract": "Traditional methods for screening and diagnosis of alcohol dependence are typically administered by trained clinicians in medical settings and often rely on interview responses. These self-reports can be unintentionally or deliberately false, and misleading answers can, in turn, lead to inaccurate assessment and diagnosis. In this study, we examine the use of user-game interaction patterns on mobile games to develop an automated diagnostic and screening tool for alcohol-dependent patients. Our approach relies on the capture of interaction patterns during gameplay, while potential patients engage with popular mobile games on smartphones. The captured signals include gameplay performance, touch gestures, and device motion, with the intention of identifying patients with alcohol dependence. We evaluate the classification performance of various supervised learning algorithms on data collected from 40 patients and 40 age-matched healthy adults. The results show that patients with alcohol dependence can be automatically identified accurately using the ensemble of touch, device motion, and gameplay performance features on 3-minute samples (accuracy=0.95, sensitivity=0.95, and specificity=0.95). The present findings provide strong evidence suggesting the potential use of user-game interaction metrics on existing mobile games as discriminant features for developing an implicit measure to identify alcohol dependence conditions. In addition to supporting healthcare professionals in clinical decision-making, the game-based self-screening method could be used as a novel strategy to promote alcohol dependence screening, especially outside of clinical settings.",
+    "authors": [
+      "Jittrapol Intarasirisawat",
+      "Chee Siang Ang",
+      "Christos Efstratiou",
+      "Luke Dickens",
+      "Naranchaya Sriburapar",
+      "Dinkar Sharma",
+      "Burachai Asawathaweeboon"
+    ],
+    "publication_date": "2020-09-04",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/3411837",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3411837",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": true,
+    "pdf_local_path": "full_text_pdfs\\10.1145_3411837.pdf",
+    "pdf_page_count": 23,
+    "text_extracted_chars": 89717,
+    "final_eligibility_status": "INCLUDE",
+    "final_exclusion_reason": null,
+    "domain_relevance_factors": [
+      "game_engine_architecture",
+      "massive_binary_assets"
+    ]
+  },
+  {
+    "title": "A Deep Dive into Large Language Models for Automated Bug Localization and Repair",
+    "abstract": "Large language models (LLMs) have shown impressive effectiveness in various software engineering tasks, including automated program repair (APR). In this study, we take a deep dive into automated bug localization and repair utilizing LLMs. In contrast to many deep learning-based APR methods that assume known bug locations, rely on line-level localization tools, or address bug prediction and fixing in one step, our approach uniquely employs LLMs to predict bug location at the token level and subsequently utilizes them for bug fixing. This methodological separation of bug localization and fixing using different LLMs enables effective integration of diverse contextual information and improved incorporation of inductive biases. We introduce Toggle: To ken- G ranulated Bug L ocalization and R e pair , a comprehensive program repair framework that integrates a bug localization model, an adjustment model to address tokenizer inconsistencies, and a bug-fixing model. Toggle takes a buggy function as input and generates a complete corrected function. We investigate various styles of prompting to the bug fixing model to identify the most effective prompts that better utilize the inductive bias and significantly outperform others. Toggle achieves the new state-of-the-art performance on the CodeXGLUE code refinement benchmark, and exhibits better and comparable performance on several other widely-used APR datasets, including Defects4J. In the Defects4J benchmark, our approach consistently ranks above other methods, achieving superior results in the Top-10, Top-30, Top-50, and Top-100 metrics. Besides examining Toggle’s generalizability to unseen data, evaluating the effectiveness of various prompts, we also investigate the impact of additional contextual information such as buggy lines and code comments on bug localization, and explore the importance of the adjustment model. Our extensive experiments offer valuable insights and answers to critical research questions.",
+    "authors": [
+      "Soneya Binta Hossain",
+      "Nan Jiang",
+      "Qiang Zhou",
+      "Xiaopeng Li",
+      "Wen-Hao Chiang",
+      "Yingjun Lyu",
+      "Hoan Nguyen",
+      "Omer Tripp"
+    ],
+    "publication_date": "2024-07-12",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/3660773",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3660773",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": false,
+    "pdf_local_path": null,
+    "pdf_page_count": 0,
+    "text_extracted_chars": 0,
+    "final_eligibility_status": "INCLUDE",
+    "final_exclusion_reason": null,
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "title": "An Automated High-Level Saliency Predictor for Smart Game Balancing",
+    "abstract": "Successfully predicting visual attention can significantly improve many aspects of computer graphics: scene design, interactivity and rendering. Most previous attention models are mainly based on low-level image features, and fail to take into account high-level factors such as scene context, topology, or task. Low-level saliency has previously been combined with task maps, but only for predetermined tasks. Thus, the application of these methods to graphics (e.g., for selective rendering) has not achieved its full potential. In this article, we present the first automated high-level saliency predictor incorporating two hypotheses from perception and cognitive science that can be adapted to different tasks. The first states that a scene is comprised of objects expected to be found in a specific context as well objects out of context which are salient (scene schemata) while the other claims that viewer’s attention is captured by isolated objects (singletons). We propose a new model of attention by extending Eckstein’s Differential Weighting Model. We conducted a formal eye-tracking experiment which confirmed that object saliency guides attention to specific objects in a game scene and determined appropriate parameters for a model. We present a GPU-based system architecture that estimates the probabilities of objects to be attended in real- time. We embedded this tool in a game level editor to automatically adjust game level difficulty based on object saliency, offering a novel way to facilitate game design. We perform a study confirming that game level completion time depends on object topology as predicted by our system.",
+    "authors": [
+      "George Alex Koulieris",
+      "George Drettakis",
+      "Douglas Cunningham",
+      "Katerina Mania"
+    ],
+    "publication_date": "2014-12-08",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/2637479",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/2637479",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": false,
+    "pdf_local_path": null,
+    "pdf_page_count": 0,
+    "text_extracted_chars": 0,
+    "final_eligibility_status": "EXCLUDE",
+    "final_exclusion_reason": "Excluded at Full-Text: Lacks explicit relevance to game engine architecture, massive assets, or non-deterministic/crash triage.",
+    "domain_relevance_factors": []
+  },
+  {
+    "title": "When Automated Program Repair Meets Regression Testing—An Extensive Study on Two Million Patches",
+    "abstract": "In recent years, Automated Program Repair (APR) has been extensively studied in academia and even drawn wide attention from the industry. However, APR techniques can be extremely time consuming since (1) a large number of patches can be generated for a given bug, and (2) each patch needs to be executed on the original tests to ensure its correctness. In the literature, various techniques (e.g., based on learning, mining, and constraint solving) have been proposed/studied to reduce the number of patches. Intuitively, every patch can be treated as a software revision during regression testing; thus, traditional Regression Test Selection (RTS) techniques can be leveraged to only execute the tests affected by each patch (as the other tests would keep the same outcomes) to further reduce patch execution time. However, few APR systems actually adopt RTS and there is still a lack of systematic studies demonstrating the benefits of RTS and the impact of different RTS strategies on APR. To this end, this article presents the first extensive study of widely used RTS techniques at different levels (i.e., class/method/statement levels) for 12 state-of-the-art APR systems on over 2M patches. Our study reveals various practical guidelines for bridging the gap between APR and regression testing, including: (1) the number of patches widely used for measuring APR efficiency can incur skewed conclusions, and the use of inconsistent RTS configurations can further skew the conclusions; (2) all studied RTS techniques can substantially improve APR efficiency and should be considered in future APR work; (3) method- and statement-level RTS outperform class-level RTS substantially and should be preferred; (4) RTS techniques can substantially outperform state-of-the-art test prioritization techniques for APR, and combining them can further improve APR efficiency; and (5) traditional Regression Test Prioritization (RTP) widely studied in regression testing performs even better than APR-specific test prioritization when combined with most RTS techniques. Furthermore, we also present the detailed impact of different patch categories and patch validation strategies on our findings.",
+    "authors": [
+      "Yiling Lou",
+      "Jun Yang",
+      "Samuel Benton",
+      "Dan Hao",
+      "Lin Tan",
+      "Zhenpeng Chen",
+      "Lu Zhang",
+      "Lingming Zhang"
+    ],
+    "publication_date": "2024-09-27",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/3672450",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3672450",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": false,
+    "pdf_local_path": null,
+    "pdf_page_count": 0,
+    "text_extracted_chars": 0,
+    "final_eligibility_status": "INCLUDE",
+    "final_exclusion_reason": null,
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "title": "Efficient automated repair of high floating-point errors in numerical libraries",
+    "abstract": "Floating point computation is by nature inexact, and numerical libraries that intensively involve floating-point computations may encounter high floating-point errors. Due to the wide use of numerical libraries, it is highly desired to reduce high floating-point errors in them. Using higher precision will degrade performance and may also introduce extra errors for certain precision-specific operations in numerical libraries. Using mathematical rewriting that mostly focuses on rearranging floating-point expressions or taking Taylor expansions may not fit for reducing high floating-point errors evoked by ill-conditioned problems that are in the nature of the mathematical feature of many numerical programs in numerical libraries. In this paper, we propose a novel approach for efficient automated repair of high floating-point errors in numerical libraries. Our main idea is to make use of the mathematical feature of a numerical program for detecting and reducing high floating-point errors. The key components include a detecting method based on two algorithms for detecting high floating-point errors and a repair method for deriving an approximation of a mathematical function to generate patch to satisfy a given repair criterion. We implement our approach by constructing a new tool called AutoRNP. Our experiments are conducted on 20 numerical programs in GNU Scientific Library (GSL). Experimental results show that our approach can efficiently repair (with 100% accuracy over all randomly sampled points) high floating-point errors for 19 of the 20 numerical programs.",
+    "authors": [
+      "Xin Yi",
+      "Liqian Chen",
+      "Xiaoguang Mao",
+      "Tao Ji"
+    ],
+    "publication_date": "2019-01-02",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/3290369",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3290369",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": false,
+    "pdf_local_path": null,
+    "pdf_page_count": 0,
+    "text_extracted_chars": 0,
+    "final_eligibility_status": "INCLUDE",
+    "final_exclusion_reason": null,
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "title": "The Sustainability Face of Automated Program Repair Tools",
+    "abstract": "Automated program repair (APR) aims to automatize the process of repairing software bugs in order to reduce the cost of maintaining software programs. While APR accuracy has significantly improved in recent years, its energy impact remains unstudied. The field of green software research aims to measure the energy consumption required to develop, maintain, and use software products. Our main goal is to define the foundation for measuring the energy consumption of the APR activity. We state that an environmentally sustainable (or green) APR tool achieves a good balance between the ability to correctly repair bugs and the amount of energy consumed during such process. We measure the energy consumption of 10 traditional APR tools for Java and 11 fine-tuned large-language models (LLM) trying to repair real bugs from Defects4J. The results of this study show the existing tradeoff between energy consumption and repairability. In particular, APR tools such as TBar and RepairLlama repair more bugs than other approaches at the expense of a higher energy consumption. Other tools, such as SimFix and the LLM CodeT5-large, provide a good tradeoff between energy consumption and repairability. We also present guidelines consisting of a set of recommendations for developing greener APR.",
+    "authors": [
+      "Matias Martinez",
+      "Silverio Martínez-Fernández",
+      "Xavier Franch"
+    ],
+    "publication_date": "2025-10-06",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/3744900",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3744900",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": false,
+    "pdf_local_path": null,
+    "pdf_page_count": 0,
+    "text_extracted_chars": 0,
+    "final_eligibility_status": "INCLUDE",
+    "final_exclusion_reason": null,
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "title": "ContrastRepair : Enhancing Conversation-Based Automated Program Repair via Contrastive Test Case Pairs",
+    "abstract": "Automated Program Repair (APR) aims to automatically generate patches for rectifying software bugs. Recent strides in Large Language Models (LLM), such as ChatGPT, have yielded encouraging outcomes in APR, especially within the conversation-driven APR framework. Nevertheless, the efficacy of conversation-driven APR is contingent on the quality of the feedback information. In this article, we propose ContrastRepair , a novel conversation-based APR approach that augments conversation-driven APR by providing LLMs with contrastive test pairs. A test pair consists of a failing test and a passing test, which offer contrastive feedback to the LLM. Our key insight is to minimize the difference between the generated passing test and the given failing test, which can better isolate the root causes of bugs. By providing such informative feedback, ContrastRepair enables the LLM to produce effective bug fixes. The implementation of ContrastRepair is based on the state-of-the-art LLM, ChatGPT, and it iteratively interacts with ChatGPT until plausible patches are generated. We evaluate ContrastRepair on multiple benchmark datasets, including Defects4J, QuixBugs, and HumanEval-Java. The results demonstrate that ContrastRepair significantly outperforms existing methods, achieving a new state-of-the-art in program repair. For instance, among Defects4J 1.2 and 2.0, ContrastRepair correctly repairs 143 out of all 337 bug cases, while the best-performing baseline fixes 124 bugs.",
+    "authors": [
+      "Jiaolong Kong",
+      "Xiaofei Xie",
+      "Mingfei Cheng",
+      "Shangqing Liu",
+      "Xiaoning Du",
+      "Qi Guo"
+    ],
+    "publication_date": "2025-10-03",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/3719345",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3719345",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": true,
+    "pdf_local_path": "full_text_pdfs\\10.1145_3719345.pdf",
+    "pdf_page_count": 32,
+    "text_extracted_chars": 113400,
+    "final_eligibility_status": "INCLUDE",
+    "final_exclusion_reason": null,
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "title": "Tool Integration for Automated Synthesis of Distributed Embedded Controllers",
+    "abstract": "Controller design and their software implementations are usually done in isolated design spaces using respective COTS design tools. However, this separation of concerns can lead to long debugging and integration phases. This is because assumptions made about the implementation platform during the design phase—e.g., related to timing—might not hold in practice, thereby leading to unacceptable control performance. In order to address this, several control/architecture co-design techniques have been proposed in the literature. However, their adoption in practice has been hampered by the lack of design flows using commercial tools. To the best of our knowledge, this is the first article that implements such a co-design method using commercially available design tools in an automotive setting, with the aim of minimally disrupting existing design flows practiced in the industry. The goal of such co-design is to jointly determine controller and platform parameters in order to avoid any design-implementation gap , thereby minimizing implementation time testing and debugging. Our setting involves distributed implementations of control algorithms on automotive electronic control units ( ECUs ) communicating via a FlexRay bus. The co-design and the associated toolchain Co-Flex jointly determines controller and FlexRay parameters (that impact signal delays) in order to optimize specified design metrics. Co-Flex seamlessly integrates the modeling and analysis of control systems in MATLAB/Simulink with platform modeling and configuration in SIMTOOLS/SIMTARGET that is used for configuring FlexRay bus parameters. It automates the generation of multiple Pareto-optimal design options with respect to the quality of control and the resource usage, that an engineer can choose from. In this article, we outline a step-by-step software development process based on Co-Flex tools for distributed control applications. While our exposition is automotive specific, this design flow can easily be extended to other domains.",
+    "authors": [
+      "Debayan Roy",
+      "Licong Zhang",
+      "Wanli Chang",
+      "Dip Goswami",
+      "Birgit Vogel-Heuser",
+      "Samarjit Chakraborty"
+    ],
+    "publication_date": "2021-11-23",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/3477499",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3477499",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": true,
+    "pdf_local_path": "full_text_pdfs\\10.1145_3477499.pdf",
+    "pdf_page_count": 32,
+    "text_extracted_chars": 108722,
+    "final_eligibility_status": "EXCLUDE",
+    "final_exclusion_reason": "Excluded at Full-Text: Lacks explicit relevance to game engine architecture, massive assets, or non-deterministic/crash triage.",
+    "domain_relevance_factors": []
+  },
+  {
+    "title": "Empirically Comparing the Test Suite Reduction Techniques in Continuous Integration Process",
+    "abstract": "",
+    "authors": [
+      "Jutarporn Intasara",
+      "Chu-Ti Lin"
+    ],
+    "publication_date": "2021-04-16",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/3478301.3478304",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3478301.3478304",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": false,
+    "pdf_local_path": null,
+    "pdf_page_count": 0,
+    "text_extracted_chars": 0,
+    "final_eligibility_status": "EXCLUDE",
+    "final_exclusion_reason": "Excluded at Full-Text: Lacks explicit relevance to game engine architecture, massive assets, or non-deterministic/crash triage.",
+    "domain_relevance_factors": []
+  },
+  {
+    "title": "Beyond Tests",
+    "abstract": "Automated program repair is an emerging technology that seeks to automatically rectify program errors and vulnerabilities. Repair techniques are driven by a correctness criterion that is often in the form of a test suite. Such test-based repair may produce overfitting patches, where the patches produced fail on tests outside the test suite driving the repair. In this work, we present a repair method that fixes program vulnerabilities without the need for a voluminous test suite. Given a vulnerability as evidenced by an exploit, the technique extracts a constraint representing the vulnerability with the help of sanitizers. The extracted constraint serves as a proof obligation that our synthesized patch should satisfy. The proof obligation is met by propagating the extracted constraint to locations that are deemed to be “suitable” fix locations. An implementation of our approach (E xtract F ix ) on top of the KLEE symbolic execution engine shows its efficacy in fixing a wide range of vulnerabilities taken from the ManyBugs benchmark, real-world CVEs and Google’s OSS-Fuzz framework. We believe that our work presents a way forward for the overfitting problem in program repair by generalizing observable hazards/vulnerabilities (as constraint) from a single failing test or exploit.",
+    "authors": [
+      "Xiang Gao",
+      "Bo Wang",
+      "Gregory J. Duck",
+      "Ruyi Ji",
+      "Yingfei Xiong",
+      "Abhik Roychoudhury"
+    ],
+    "publication_date": "2021-02-10",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/3418461",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3418461",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": false,
+    "pdf_local_path": null,
+    "pdf_page_count": 0,
+    "text_extracted_chars": 0,
+    "final_eligibility_status": "INCLUDE",
+    "final_exclusion_reason": null,
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "title": "Automated Repair of TEE Partitioning Issues via DSL-Guided and LLM-Assisted Patching",
+    "abstract": "Trusted Execution Environments (TEEs) provide hardware-based isolation to protect sensitive data and computations from potentially compromised operating systems (OS). However, TEE applications inevitably interact with the untrusted OS through SDK interfaces, and improper partitioning can introduce severe vulnerabilities such as data leakage and code injection. While prior work has proposed static analysis tools to detect such issues, automated repair remains largely unexplored. This problem is particularly challenging due to three TEE-specific factors: the lack of standardized secure development guidelines, the difficulty of extracting semantic information from low-level C code, and the absence of mature testing and validation methods. In this work, we present TEERepair, a framework for automatically repairing bad partitioning issues in TEE applications. Our approach tackles the above challenges by introducing a domain-specific language (DSL) to encode repair rules that express and capture common TEE security patterns, which are instantiated as patch templates with placeholders for context-specific variables. We then leverage large language models (LLMs) to reason about code semantics and synthesize context-aware patches, and further generate test clients to validate the repairs. We evaluate TEERepair on the TEE Partitioning Errors Benchmark (PartitioningE-Bench), achieving a significantly higher repair success rate of 87.6% compared to baselines. Furthermore, applying TEERepair to real-world TEE projects, we submitted 5 repair pull requests, 2 of which have been confirmed and merged by project maintainers.",
+    "authors": [
+      "Chengyan Ma",
+      "Jieke Shi",
+      "Ruidong Han",
+      "Ye Liu",
+      "Feng Li",
+      "Yuqing Niu",
+      "David Lo"
+    ],
+    "publication_date": "2026-06-30",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/3808207",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3808207",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": true,
+    "pdf_local_path": "full_text_pdfs\\10.1145_3808207.pdf",
+    "pdf_page_count": 24,
+    "text_extracted_chars": 97165,
+    "final_eligibility_status": "INCLUDE",
+    "final_exclusion_reason": null,
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "title": "Seeing the Whole Elephant: Systematically Understanding and Uncovering Evaluation Biases in Automated Program Repair",
+    "abstract": "Evaluation is the foundation of automated program repair (APR), as it provides empirical evidence on strengths and weaknesses of APR techniques. However, the reliability of such evaluation is often threatened by various introduced biases. Consequently, bias exploration, which uncovers biases in the APR evaluation, has become a pivotal activity and performed since the early years when pioneer APR techniques were proposed. Unfortunately, there is still no methodology to support a systematic comprehension and discovery of evaluation biases in APR, which impedes the mitigation of such biases and threatens the evaluation of APR techniques. In this work, we propose to systematically understand existing evaluation biases by rigorously conducting the first systematic literature review on existing known biases and systematically uncover new biases by building a taxonomy that categorizes evaluation biases. As a result, we identify 17 investigated biases and uncover a new bias in the usage of patch validation strategies. To validate this new bias, we devise and implement an executable framework APRConfig , based on which we evaluate three typical patch validation strategies with four representative heuristic-based and constraint-based APR techniques on three bug datasets. Overall, this article distills 13 findings for bias understanding, discovery, and validation. The systematic exploration we performed and the open source executable framework we proposed in this article provide new insights as well as an infrastructure for future exploration and mitigation of biases in APR evaluation.",
+    "authors": [
+      "Deheng Yang",
+      "Yan Lei",
+      "Xiaoguang Mao",
+      "Yuhua Qi",
+      "Xin Yi"
+    ],
+    "publication_date": "2023-04-27",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/3561382",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3561382",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": false,
+    "pdf_local_path": null,
+    "pdf_page_count": 0,
+    "text_extracted_chars": 0,
+    "final_eligibility_status": "INCLUDE",
+    "final_exclusion_reason": null,
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "title": "HybridCISave : A Combined Build and Test Selection Approach in Continuous Integration",
+    "abstract": "Continuous Integration (CI) is a popular practice in modern software engineering. Unfortunately, it is also a high-cost practice—Google and Mozilla estimate their CI systems in millions of dollars. To reduce the computational cost in CI, researchers developed approaches to selectively execute builds or tests that are likely to fail (and skip those likely to pass). In this article, we present a novel hybrid technique ( HybridCISave ) to improve on the limitations of existing techniques: to provide higher cost savings and higher safety. To provide higher cost savings, HybridCISave combines techniques to predict and skip executions of both full builds that are predicted to pass and partial ones (only the tests in them predicted to pass). To provide higher safety, HybridCISave combines the predictions of multiple techniques to obtain stronger certainty before it decides to skip a build or test. We evaluated HybridCISave by comparing its effectiveness with the existing build selection techniques over 100 projects and found that it provided higher cost savings at the highest safety. We also evaluated each design decision in HybridCISave and found that skipping both full and partial builds increased its cost savings and that combining multiple test selection techniques made it safer.",
+    "authors": [
+      "Xianhao Jin",
+      "Francisco Servant"
+    ],
+    "publication_date": "2023-05-26",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/3576038",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3576038",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": true,
+    "pdf_local_path": "full_text_pdfs\\10.1145_3576038.pdf",
+    "pdf_page_count": 37,
+    "text_extracted_chars": 140946,
+    "final_eligibility_status": "INCLUDE",
+    "final_exclusion_reason": null,
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "title": "UniLoc: Unified Fault Localization of Continuous Integration Failures",
+    "abstract": "Continuous integration (CI) practices encourage developers to frequently integrate code into a shared repository. Each integration is validated by automatic build and testing such that errors are revealed as early as possible. When CI failures or integration errors are reported, existing techniques are insufficient to automatically locate the root causes for two reasons. First, a CI failure may be triggered by faults in source code and/or build scripts, whereas current approaches consider only source code. Second, a tentative integration can fail because of build failures and/or test failures, whereas existing tools focus on test failures only. This article presents UniLoc, the first unified technique to localize faults in both source code and build scripts given a CI failure log, without assuming the failure’s location (source code or build scripts) and nature (a test failure or not). Adopting the information retrieval (IR) strategy, UniLoc locates buggy files by treating source code and build scripts as documents to search and by considering build logs as search queries. However, instead of naïvely applying an off-the-shelf IR technique to these software artifacts, for more accurate fault localization, UniLoc applies various domain-specific heuristics to optimize the search queries, search space, and ranking formulas. To evaluate UniLoc, we gathered 700 CI failure fixes in 72 open source projects that are built with Gradle. UniLoc could effectively locate bugs with the average mean reciprocal rank value as 0.49, mean average precision value as 0.36, and normalized discounted cumulative gain value as 0.54. UniLoc outperformed the state-of-the-art IR-based tool BLUiR and Locus. UniLoc has the potential to help developers diagnose root causes for CI failures more accurately and efficiently.",
+    "authors": [
+      "Foyzul Hassan",
+      "Na Meng",
+      "Xiaoyin Wang"
+    ],
+    "publication_date": "2023-09-28",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/3593799",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3593799",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": false,
+    "pdf_local_path": null,
+    "pdf_page_count": 0,
+    "text_extracted_chars": 0,
+    "final_eligibility_status": "EXCLUDE",
+    "final_exclusion_reason": "Excluded at Full-Text: Lacks explicit relevance to game engine architecture, massive assets, or non-deterministic/crash triage.",
+    "domain_relevance_factors": []
+  },
+  {
+    "title": "HornBro: Homotopy-Like Method for Automated Quantum Program Repair",
+    "abstract": "Quantum programs provide exponential speedups compared to classical programs in certain areas, but they also inevitably encounter logical faults. Automatically repairing quantum programs is much more challenging than repairing classical programs due to the non-replicability of data, the vast search space of program inputs, and the new programming paradigm. Existing works based on semantic-based or learning-based program repair techniques are fundamentally limited in repairing efficiency and effectiveness. In this work, we propose HornBro, an efficient framework for automated quantum program repair. The key insight of HornBro lies in the homotopy-like method, which iteratively switches between the classical and quantum parts. This approach allows the repair tasks to be efficiently offloaded to the most suitable platforms, enabling a progressive convergence toward the correct program. We start by designing an implication assertion pragma to enable rigorous specifications of quantum program behavior, which helps to generate a quantum test suite automatically. This suite leverages the orthonormal bases of quantum programs to accommodate different encoding schemes. Given a fixed number of test cases, it allows the maximum input coverage of potential counter-example candidates. Then, we develop a Clifford approximation method with an SMT-based search to transform the patch localization program into a symbolic reasoning problem. Finally, we offload the computationally intensive repair of gate parameters to quantum hardware by leveraging the differentiability of quantum gates. Experiments suggest that HornBro increases the repair success rate by more than 62.5% compared to the existing repair techniques, supporting more types of quantum bugs. It also achieves 35.7× speedup in the repair and 99.9% gate reduction of the patch.",
+    "authors": [
+      "Siwei Tan",
+      "Liqiang Lu",
+      "Debin Xiang",
+      "Tianyao Chu",
+      "Congliang Lang",
+      "Jintao Chen",
+      "Xing Hu",
+      "Jianwei Yin"
+    ],
+    "publication_date": "2025-06-19",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/3715751",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3715751",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": false,
+    "pdf_local_path": null,
+    "pdf_page_count": 0,
+    "text_extracted_chars": 0,
+    "final_eligibility_status": "EXCLUDE",
+    "final_exclusion_reason": "Excluded at Full-Text: Lacks explicit relevance to game engine architecture, massive assets, or non-deterministic/crash triage.",
+    "domain_relevance_factors": []
+  },
+  {
+    "title": "A Survey of Learning-based Automated Program Repair",
+    "abstract": "Automated program repair (APR) aims to fix software bugs automatically and plays a crucial role in software development and maintenance. With the recent advances in deep learning (DL), an increasing number of APR techniques have been proposed to leverage neural networks to learn bug-fixing patterns from massive open-source code repositories. Such learning-based techniques usually treat APR as a neural machine translation (NMT) task, where buggy code snippets (i.e., source language) are translated into fixed code snippets (i.e., target language) automatically. Benefiting from the powerful capability of DL to learn hidden relationships from previous bug-fixing datasets, learning-based APR techniques have achieved remarkable performance. In this article, we provide a systematic survey to summarize the current state-of-the-art research in the learning-based APR community. We illustrate the general workflow of learning-based APR techniques and detail the crucial components, including fault localization, patch generation, patch ranking, patch validation, and patch correctness phases. We then discuss the widely adopted datasets and evaluation metrics and outline existing empirical studies. We discuss several critical aspects of learning-based APR techniques, such as repair domains, industrial deployment, and the open science issue. We highlight several practical guidelines on applying DL techniques for future APR studies, such as exploring explainable patch generation and utilizing code features. Overall, our article can help researchers gain a comprehensive understanding about the achievements of the existing learning-based APR techniques and promote the practical application of these techniques. Our artifacts are publicly available at the repository: https://github.com/iSEngLab/AwesomeLearningAPR .",
+    "authors": [
+      "Quanjun Zhang",
+      "Chunrong Fang",
+      "Yuxiang Ma",
+      "Weisong Sun",
+      "Zhenyu Chen"
+    ],
+    "publication_date": "2023-12-23",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/3631974",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3631974",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": false,
+    "pdf_local_path": null,
+    "pdf_page_count": 0,
+    "text_extracted_chars": 0,
+    "final_eligibility_status": "INCLUDE",
+    "final_exclusion_reason": null,
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "title": "Towards Automated Smart Contract Generation: Evaluation, Benchmarking, and Retrieval-Augmented Repair",
+    "abstract": "Smart contracts, predominantly written in Solidity and executed on blockchains like Ethereum, are immutable, making functional correctness paramount: once deployed, bugs and vulnerabilities become permanent. Despite rapid progress in transformer-based code LLMs, existing evaluations of Solidity code completion rely heavily on surface-form metrics (e.g., BLEU, CrystalBLEU) or hand-grading, which poorly correlate with functional correctness. Unlike Python, Solidity lacks large-scale and execution-based benchmarks, hindering systematic assessment and optimization of LLMs for smart contract development. To bridge this research gap, we introduce SolBench, a comprehensive benchmark and automated testing pipeline for Solidity, designed to emphasize functional correctness via differential fuzzing. SolBench contains 28,825 functions from 7,604 contracts collected from Etherscan (genesis to 2024), spanning 10 popular domains. We benchmark 14 diverse LLMs (open/closed, 1.3B to 671B parameters, general/code-specific, with/without reasoning). The dominant failure mode is missing crucial details (e.g., type definitions, state variables) in intra-contract context. Providing full-contract context mitigates this and improves code completion accuracy. However, full-context inference can be prohibitively expensive in practice. Generating outputs with large context windows using state-of-the-art models often incurs significant costs, rendering naive context scaling economically impractical. Crucially, most of a contract is irrelevant to implementing a given function; only a small subset of details is needed. To exploit this, we propose Retrieval-Augmented Repair (RAR), which integrates retrieval into code repair: it uses the executor's error messages to extract only the most relevant snippets from the full contract. RAR sharply reduces input length for function completion, improving accuracy while significantly cutting computational cost. We further analyze retrieval and code repair strategies within RAR, showing substantial improvements in accuracy and efficiency. SolBench and our RAR framework enable principled evaluation and cost-effective improvement of Solidity code generation. Dataset and code are available at https://github.com/ZaoyuChen/SolBench.",
+    "authors": [
+      "Zaoyu Chen",
+      "Haoran Qin",
+      "Nuo Chen",
+      "Xiangyu Zhao",
+      "Lei Xue",
+      "Xiapu Luo",
+      "Xiao-Ming Wu"
+    ],
+    "publication_date": "2026-06-30",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/3797068",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3797068",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": false,
+    "pdf_local_path": null,
+    "pdf_page_count": 0,
+    "text_extracted_chars": 0,
+    "final_eligibility_status": "EXCLUDE",
+    "final_exclusion_reason": "Excluded at Full-Text: Lacks explicit relevance to game engine architecture, massive assets, or non-deterministic/crash triage.",
+    "domain_relevance_factors": []
+  },
+  {
+    "title": "sGuard+: Machine Learning Guided Rule-Based Automated Vulnerability Repair on Smart Contracts",
+    "abstract": "Smart contracts are becoming appealing targets for hackers because of the vast amount of cryptocurrencies under their control. Asset loss due to the exploitation of smart contract codes has increased significantly in recent years. To guarantee that smart contracts are vulnerability-free, there are many works to detect the vulnerabilities of smart contracts, but only a few vulnerability repair works have been proposed. Repairing smart contract vulnerabilities at the source code level is attractive as it is transparent to users, whereas existing repair tools, such as SCRepair and sGuard , suffer from many limitations: (1) ignoring the code of vulnerability prevention; (2) possibly applying the repair to the wrong statements and changing the original business logic of smart contracts; and (3) showing poor performance in terms of time and gas overhead. In this work, we propose machine learning guided rule-based automated vulnerability repair on smart contracts to improve the effectiveness and efficiency of sGuard . To address the limitations mentioned above, we design the features that characterize both the symptoms of vulnerabilities and the methods of vulnerability prevention to learn various vulnerability patterns and reduce false positives. Additionally, a fine-grained localization algorithm is designed by traversing the nodes of the abstract syntax tree, and we refine and extend the repair rules of sGuard to preserve the original business logic of smart contracts and support new vulnerability types. Our tool, named sGuard+ , reduces time overhead based on machine learning models, and reduces gas overhead by fewer code changes and precise patching. In our experiment, we collect a publicly available vulnerability dataset from CVE, SWC, and SmartBugs Curated as a ground truth for evaluations. Overall, sGuard+ repairs more vulnerabilities with less time and gas overhead than state-of-the-art tools. Furthermore, we reproduce about 9,000 historical transactions for regression testing. It is shown that sGuard+ has no impact on the original business logic of smart contracts.",
+    "authors": [
+      "Cuifeng Gao",
+      "Wenzhang Yang",
+      "Jiaming Ye",
+      "Yinxing Xue",
+      "Jun Sun"
+    ],
+    "publication_date": "2024-06-04",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/3641846",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3641846",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": false,
+    "pdf_local_path": null,
+    "pdf_page_count": 0,
+    "text_extracted_chars": 0,
+    "final_eligibility_status": "EXCLUDE",
+    "final_exclusion_reason": "Excluded at Full-Text: Lacks explicit relevance to game engine architecture, massive assets, or non-deterministic/crash triage.",
+    "domain_relevance_factors": []
+  },
+  {
+    "title": "Assessing the Latent Automated Program Repair Capabilities of Large Language Models Using Round-Trip Translation",
+    "abstract": "Research shows that errors in natural language can be corrected by translating texts to another language and back using language models. We explore to what extent this latent correction capability extends to Automated Program Repair (APR) by investigating Round-Trip Translation (RTT): translating code from one programming language into another programming or natural language and back, using Large Language Models (LLMs). We hypothesize that RTT restores patterns most commonly seen in the LLM’s training corpora through regression toward the mean , replacing infrequent bugs with more frequent, natural , bug-free code. To test this hypothesis, we employ nine LLMs and four common APR benchmarks in Java and perform a detailed quantitative and qualitative analysis of RTT-generated patches. We find that RTT through English generates plausible patches for 100 of 164 bugs with GPT-4 on the HumanEval-Java benchmark, and 97 are found to be correct in our manual assessment. Moreover, RTT uniquely generates plausible patches for 46 bugs that were missed by LLMs specifically fine-tuned for APR. While this demonstrates the viability of RTT for APR, we also observe limitations, such as a lower overall bug fix rate than the state-of-the-art and diluting the original coding style. We analyze the impact of these limitations and discuss the potential of using RTT as a complementary component in APR frameworks.",
+    "authors": [
+      "Fernando Vallecillos-Ruiz",
+      "Anastasiia Grishina",
+      "Max Hort",
+      "Leon Moonen"
+    ],
+    "publication_date": "2026-07-10",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/3771922",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3771922",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": false,
+    "pdf_local_path": null,
+    "pdf_page_count": 0,
+    "text_extracted_chars": 0,
+    "final_eligibility_status": "INCLUDE",
+    "final_exclusion_reason": null,
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  },
+  {
+    "title": "StubCoder : Automated Generation and Repair of Stub Code for Mock Objects",
+    "abstract": "Mocking is an essential unit testing technique for isolating the class under test from its dependencies. Developers often leverage mocking frameworks to develop stub code that specifies the behaviors of mock objects. However, developing and maintaining stub code is labor-intensive and error-prone. In this article, we present StubCoder to automatically generate and repair stub code for regression testing. StubCoder implements a novel evolutionary algorithm that synthesizes test-passing stub code guided by the runtime behavior of test cases. We evaluated our proposed approach on 59 test cases from 13 open source projects. Our evaluation results show that StubCoder can effectively generate stub code for incomplete test cases without stub code and repair obsolete test cases with broken stub code.",
+    "authors": [
+      "Hengcheng Zhu",
+      "Lili Wei",
+      "Valerio Terragni",
+      "Yepang Liu",
+      "Shing-Chi Cheung",
+      "Jiarong Wu",
+      "Qin Sheng",
+      "Bing Zhang",
+      "Lihong Song"
+    ],
+    "publication_date": "2023-11-24",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/3617171",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3617171",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": false,
+    "pdf_local_path": null,
+    "pdf_page_count": 0,
+    "text_extracted_chars": 0,
+    "final_eligibility_status": "EXCLUDE",
+    "final_exclusion_reason": "Excluded at Full-Text: Lacks explicit relevance to game engine architecture, massive assets, or non-deterministic/crash triage.",
+    "domain_relevance_factors": []
+  },
+  {
+    "title": "Reliable Fix Patterns Inferred from Static Checkers for Automated Program Repair",
+    "abstract": "Fix pattern-based patch generation is a promising direction in automated program repair (APR). Notably, it has been demonstrated to produce more acceptable and correct patches than the patches obtained with mutation operators through genetic programming. The performance of pattern-based APR systems, however, depends on the fix ingredients mined from fix changes in development histories. Unfortunately, collecting a reliable set of bug fixes in repositories can be challenging. In this article, we propose investigating the possibility in an APR scenario of leveraging fix patterns inferred from code changes that address violations detected by static analysis tools. To that end, we build a fix pattern-based APR tool, Avatar , which exploits fix patterns of static analysis violations as ingredients for the patch generation of repairing semantic bugs. Evaluated on four benchmarks (i.e., Defects4J, Bugs.jar, BEARS, and QuixBugs), Avatar presents the potential feasibility of fixing semantic bugs with the fix patterns inferred from the patches for fixing static analysis violations and can correctly fix 26 semantic bugs when Avatar is implemented with the normal program repair pipeline. We also find that Avatar achieves performance metrics that are comparable to that of the closely related approaches in the literature. Compared with CoCoNut, Avatar can fix 18 new bugs in Defects4J and 3 new bugs in QuixBugs. When compared with HDRepair, JAID, and SketchFix, Avatar can newly fix 14 Defects4J bugs. In terms of the number of correctly fixed bugs, Avatar is also comparable to the program repair tools with the normal fault localization setting and presents better performance than most program repair tools. These results imply that Avatar is complementary to current program repair approaches. We further uncover that Avatar can present different bug-fixing performances when it is configured with different fault localization tools, and the stack trace information from the failed executions of test cases can be exploited to improve the bug-fixing performance of Avatar by fixing more bugs with fewer generated patch candidates. Overall, our study highlights the relevance of static bug-finding tools as indirect contributors of fix ingredients for addressing code defects identified with functional test cases (i.e., dynamic information).",
+    "authors": [
+      "Kui Liu",
+      "Jingtang Zhang",
+      "Li Li",
+      "Anil Koyuncu",
+      "Dongsun Kim",
+      "Chunpeng Ge",
+      "Zhe Liu",
+      "Jacques Klein",
+      "Tegawendé F. Bissyandé"
+    ],
+    "publication_date": "2023-05-26",
+    "source_database": "CrossRef (ACM Digital Library)",
+    "DOI": "10.1145/3579637",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3579637",
+    "inclusion_status": "INCLUDE",
+    "exclusion_reason": null,
+    "picoc_evaluations": {
+      "P_POPULATION": true,
+      "I_INTERVENTION": true,
+      "C_COMPARISON": true,
+      "O_OUTCOMES": true,
+      "C_CONTEXT": true,
+      "EXCL_METADATA_PLACEHOLDER": false
+    },
+    "pdf_retrieved": true,
+    "pdf_local_path": "full_text_pdfs\\10.1145_3579637.pdf",
+    "pdf_page_count": 38,
+    "text_extracted_chars": 141006,
+    "final_eligibility_status": "INCLUDE",
+    "final_exclusion_reason": null,
+    "domain_relevance_factors": [
+      "non_deterministic_testing_and_crash_triage"
+    ]
+  }
+]

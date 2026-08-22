@@ -1,0 +1,42 @@
+{
+  "protocol_name": "PRISMA Step 1 PICOC Screening Protocol",
+  "domain": "CI Timeouts and Crash Triage in Game Development",
+  "rules": [
+    {
+      "rule_id": "P_POPULATION",
+      "name": "Population / Problem Scope",
+      "description": "The study focuses on software engineering systems involving continuous integration (CI) pipelines, build/test timeouts, execution delays, or software crashes/failures in gaming systems, game engines, or interactive graphics systems.",
+      "required_boolean": true
+    },
+    {
+      "rule_id": "I_INTERVENTION",
+      "name": "Intervention Methodology",
+      "description": "The study investigates, implements, or evaluates an automated technique, algorithm, or methodology for crash triage, automated program repair (APR), CI timeout mitigation, test acceleration, test selection/prioritization, or crash localization.",
+      "required_boolean": true
+    },
+    {
+      "rule_id": "C_COMPARISON",
+      "name": "Comparison Baseline",
+      "description": "The study compares against or references baseline methods (e.g. manual triage, standard CI pipelines, unoptimized test suites, baseline repair algorithms, or standard benchmarks like OSSGameBench/Defects4J).",
+      "required_boolean": true
+    },
+    {
+      "rule_id": "O_OUTCOMES",
+      "name": "Outcomes / Metrics",
+      "description": "The study reports empirical, quantitative, or qualitative metrics related to CI efficiency (runtime, timeout reduction), crash triage accuracy, localization precision, patch quality, or build flakiness.",
+      "required_boolean": true
+    },
+    {
+      "rule_id": "C_CONTEXT",
+      "name": "Context Relevance",
+      "description": "The study is situated in software engineering, game engineering, or CI/CD test automation context (excluding purely non-computational, hardware-only, or unrelated non-software game studies).",
+      "required_boolean": true
+    },
+    {
+      "rule_id": "EXCL_METADATA_PLACEHOLDER",
+      "name": "Metadata / Editorial / Non-Peer-Reviewed Placeholder",
+      "description": "The record represents a non-technical editorial, keynote title slide without empirical content, table of contents, front-matter notice, or non-technical announcement.",
+      "required_boolean": false
+    }
+  ]
+}

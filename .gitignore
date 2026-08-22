@@ -1,0 +1,8 @@
+﻿venv/
+.venv/
+__pycache__/
+*.pyc
+godot_triage_engine/
+ci_timeout_analyzer/
+quest_outreach_showcase/
+portfolio_export/

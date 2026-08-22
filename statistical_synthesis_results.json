@@ -1,0 +1,158 @@
+{
+  "analysis_type": "PRISMA Step 7 Quantitative Meta-Analysis & Statistical Synthesis",
+  "domain": "CI Timeouts and Crash Triage in Game Development",
+  "model": "DerSimonian-Laird Random-Effects Model (with Inverse-Variance Fixed-Effects Reference)",
+  "meta_analytic_summary": {
+    "k_studies": 9,
+    "fixed_effect": {
+      "pooled_g": 3.973239343077283,
+      "se": 0.12823826698743704,
+      "ci_lower": 3.7218923397819066,
+      "ci_upper": 4.22458634637266
+    },
+    "random_effect": {
+      "pooled_g": 4.403752824225386,
+      "se": 0.39838496317893063,
+      "ci_lower": 3.6229182963946815,
+      "ci_upper": 5.18458735205609,
+      "z_score": 11.0540136582602,
+      "p_value": 0.0
+    },
+    "heterogeneity": {
+      "cochrans_q": 73.56922815082564,
+      "df": 8,
+      "p_value": 9.53570555850547e-13,
+      "i_squared": 89.12588836245631,
+      "tau_squared": 1.2421058809963113,
+      "tau": 1.1144980399248405
+    }
+  },
+  "individual_study_effect_sizes": [
+    {
+      "study_id": "STUDY_25",
+      "citation": "Jin & Servant (2023)",
+      "title": "HybridCISave (CI Build & Test Selection)",
+      "metric_focus": "CI Build Time / Timeout Reduction (%)",
+      "cohens_d": 3.9340805162036507,
+      "hedges_g": 3.909022678520825,
+      "se_g": 0.3114512956921069,
+      "var_g": 0.09700190958829219,
+      "ci_lower": 3.2985781389642956,
+      "ci_upper": 4.519467218077354,
+      "n_total": 120,
+      "weight_pct": 11.851964420115198
+    },
+    {
+      "study_id": "STUDY_02",
+      "citation": "Wei et al. (2026)",
+      "title": "Repilot (Token Completion Engine)",
+      "metric_focus": "Patch Generation Validity & Speedup",
+      "cohens_d": 4.033551131659683,
+      "hedges_g": 3.999076335662592,
+      "se_g": 0.3650921614123735,
+      "var_g": 0.13329228632475856,
+      "ci_lower": 3.28349569929434,
+      "ci_upper": 4.714656972030844,
+      "n_total": 90,
+      "weight_pct": 11.539246064011142
+    },
+    {
+      "study_id": "STUDY_03",
+      "citation": "Zirak & Hemmati (2024)",
+      "title": "Domain Adaptation for APR",
+      "metric_focus": "Exact Match Fix Efficacy Gain (%)",
+      "cohens_d": 2.988612625555783,
+      "hedges_g": 2.9597835648591033,
+      "se_g": 0.3236541243249696,
+      "var_g": 0.10475199219256288,
+      "ci_lower": 2.325421481182163,
+      "ci_upper": 3.5941456485360437,
+      "n_total": 80,
+      "weight_pct": 11.783765907779745
+    },
+    {
+      "study_id": "STUDY_04",
+      "citation": "Zhang et al. (2025)",
+      "title": "EffFix (Separation Logic Memory APR)",
+      "metric_focus": "Equivalence Class Validation Speedup",
+      "cohens_d": 4.0783086733499605,
+      "hedges_g": 4.033161344862692,
+      "se_g": 0.41633083027884926,
+      "var_g": 0.173331360240676,
+      "ci_lower": 3.2171529175161475,
+      "ci_upper": 4.849169772209237,
+      "n_total": 70,
+      "weight_pct": 11.212830513656446
+    },
+    {
+      "study_id": "STUDY_09",
+      "citation": "Zhao et al. (2022)",
+      "title": "ReCDroid+ (Crash Reproduction)",
+      "metric_focus": "Crash Trace Reproduction Time Reduction",
+      "cohens_d": 5.2076060000660975,
+      "hedges_g": 5.1676499437996055,
+      "se_g": 0.41656095557344347,
+      "var_g": 0.17352302970826033,
+      "ci_lower": 4.351190470875657,
+      "ci_upper": 5.9841094167235545,
+      "n_total": 100,
+      "weight_pct": 11.211312349370301
+    },
+    {
+      "study_id": "STUDY_19",
+      "citation": "Yi et al. (2019)",
+      "title": "Floating-Point Error APR",
+      "metric_focus": "Numerical Instability Repair Speedup",
+      "cohens_d": 7.047476417687967,
+      "hedges_g": 6.955950749925786,
+      "se_g": 0.6854758130634097,
+      "var_g": 0.4698770902949425,
+      "ci_lower": 5.612418156321503,
+      "ci_upper": 8.299483343530069,
+      "n_total": 60,
+      "weight_pct": 9.27056995008375
+    },
+    {
+      "study_id": "STUDY_21",
+      "citation": "Kong et al. (2025)",
+      "title": "ContrastRepair (Contrastive APR)",
+      "metric_focus": "Conversational Round Reduction",
+      "cohens_d": 2.627499198696683,
+      "hedges_g": 2.6021535472623096,
+      "se_g": 0.303842095951271,
+      "var_g": 0.09232001927206138,
+      "ci_lower": 2.0066230391978186,
+      "ci_upper": 3.1976840553268007,
+      "n_total": 80,
+      "weight_pct": 11.893547543940722
+    },
+    {
+      "study_id": "STUDY_23",
+      "citation": "Ma et al. (2026)",
+      "title": "DSL-Guided TEE Patching",
+      "metric_focus": "Automated Verification Time Reduction",
+      "cohens_d": 5.953435665766037,
+      "hedges_g": 5.876118319457387,
+      "se_g": 0.5953204074576333,
+      "var_g": 0.3544063875355225,
+      "ci_lower": 4.7092903208404255,
+      "ci_upper": 7.042946318074348,
+      "n_total": 60,
+      "weight_pct": 9.941081068736759
+    },
+    {
+      "study_id": "STUDY_28",
+      "citation": "Liu et al. (2023)",
+      "title": "Reliable Fix Patterns APR",
+      "metric_focus": "Search Space & Timeout Reduction (%)",
+      "cohens_d": 4.997159761903566,
+      "hedges_g": 4.958818382656224,
+      "se_g": 0.40366991312314376,
+      "var_g": 0.16294939876084644,
+      "ci_lower": 4.167625352934862,
+      "ci_upper": 5.750011412377586,
+      "n_total": 100,
+      "weight_pct": 11.295682182305924
+    }
+  ]
+}
